@@ -1,0 +1,33 @@
+{
+  "name": "fidi-html",
+  "version": "0.0.0",
+  "dependencies": {
+    "jquery": "~1.10.2",
+    "modernizr": "~2.7",
+    "html5shiv": "~3.7.2",
+    "bootstrap-sass-official": "~3.3.3",
+    "detectizr": "~2.0.0",
+    "fastclick": "~1.0.1",
+    "respondJs": "~1.4.2"
+  },
+  "overrides": {
+    "modernizr": {
+      "main": "modernizr.js"
+    },
+    "detectizr": {
+      "main": [
+        "dist/detectizr.min.js",
+        "dist/detectizr.min.map"
+      ]
+    },
+    "jquery": {
+      "main": "jquery.min.js"
+    },
+    "bootstrap-sass-official": {
+      "main": [
+        "assets/javascripts/bootstrap/**/*",
+        "assets/fonts/**/*"
+      ]
+    }
+  }
+}
