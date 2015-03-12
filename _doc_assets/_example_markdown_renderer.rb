@@ -1,3 +1,5 @@
+require 'Pygments'
+
 class ExampleMarkdownRenderer < Redcarpet::Render::HTML
   def block_code(code, language)
     if language and language.include?('example')

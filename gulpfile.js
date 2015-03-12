@@ -112,6 +112,9 @@ gulp.task('hologram', function(done) {
 
     hologram.on('close', function(code) {
         if (code > 0) return done('Exited with error code ' + code);
+        else {
+          if (isLivereloadLaunched()) $.livereload.changed("*.html");
+        }
         return done();
     });
 });
@@ -131,8 +134,17 @@ gulp.task('http', function() {
 gulp.task('watch', function() {
   $.livereload.listen();
 
-  gulp.watch(['_doc_assets/**/*', path.join(cssPath, '**/*')], ['hologram']);
-  gulp.watch(["**/*", "!.*/**", "!_site/**", "!_doc_assets/**", "!node_modules/**"], ['jekyll']);
+  gulp.watch([
+    '_doc_assets/**/*', 
+    path.join(cssPath, '**/*'), 
+    path.join(sassResourcesPath, '**/*')], ['hologram']);
+
+  gulp.watch([
+    "**/*", 
+    "!.*/**", 
+    "!_site/**", 
+    "!_doc_assets/**", 
+    "!node_modules/**"], ['jekyll']);
 });
 
 
