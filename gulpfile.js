@@ -12,24 +12,17 @@ var path = require('path');
 ********************************************/
 
 // directorios principales
-var distPath            = "dist";
+var distPath            = "_site";
 var sourcesPath         = "src";
 var webPath             = "src/web";
 
 // ubicación donde se copian las librerías de terceros
 var vendorPath          = "_vendor";
 
-// ubicación de sass
-var sassBasePath        = "src/styles";
-var sassPath            = "src/styles/main.scss";
+var sassResourcesPath   = "_sass";
 
 // directorios temporales
 var bowerComponentsPath = '.bower_components';
-var tmpPath             = ".tmp";
-var cssPath             = ".tmp/css";
-
-// configuración para autoprefixer
-var compatibleBrowsers  = "last 2 version', '> 1%', 'ie >= 9', 'Opera 12.1'";
 
 /********************************************/
 
@@ -51,7 +44,7 @@ var livereload = require('gulp-livereload')
 // Actualiza los componentes de bower
 // ****************************************************
 gulp.task('bower', function(done) {
-  runSequence('bower:update', 'bower:clean', ['bower:sync'], done);
+  runSequence('bower:update', 'bower:clean', ['bower:sync'], ['bower:copy'], done);
 });
 
 // Copia los ficheros de bower necesarios a la carpeta vendor (revisar bower.json)
@@ -75,27 +68,13 @@ gulp.task('bower:update', function() {
   return $.bower();
 });
 
-
-// ****************************************************
-// Compilación de estilos
-// ****************************************************
-gulp.task('styles', function(done) {
-  runSequence(['sass'], done);
-});
-
-// Compila ficheros SASS
-gulp.task('sass', function() {
+gulp.task('bower:copy', function(done) {
   return gulp
-    .src(sassPath)
-    .pipe($.plumber({ errorHandler: errorHandler }))
-    .pipe($.if(argv.debug, $.sourcemaps.init()))
-    .pipe($.sass({ precision: 10 }))
-    .pipe($.if(argv.debug, $.sourcemaps.write("./maps")))
-    .pipe($.if(!argv.debug, autoprefixer(compatibleBrowsers)))
-    .pipe(gulp.dest(cssPath))
-    .pipe($.notify("Compilación SASS terminada"))
-    .pipe($.if(isLivereloadLaunched(), $.livereload()));
+    .src(path.join(bowerComponentsPath, "/bootstrap-sass-official/assets/stylesheets/**/*"),
+         { base: "bootstrap-sass-official/assets/stylesheets"})
+    .pipe(gulp.dest(path.join(sassResourcesPath, "/bootstrap")))
 });
+
 
 // ****************************************************
 // Compila la documentación de la hoja de estilos

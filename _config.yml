@@ -1,1 +1,16 @@
-exclude: [".bowerrc", ".gitignore", ".ruby-gemset", ".ruby-version", "bower.json", "Gemfile", "Gemfile.lock", "gulpfile.js", "hologram_config.yml", "package.json", "readme.md"]
+exclude:
+  - ".bower_components"
+  - "node_modules"
+  - ".bowerrc"
+  - ".gitignore"
+  - ".ruby-gemset"
+  - ".ruby-version"
+  - "bower.json"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "gulpfile.js"
+  - "hologram_config.yml"
+  - "package.json"
+  - "readme.md"
+sass:
+    style: :compressed

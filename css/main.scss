@@ -1,3 +1,5 @@
+---
+---
 /*doc
 ---
 title: Demo
@@ -8,7 +10,8 @@ category: Demo
 Hello world!!
 
 */
-@import "../../.bower_components/bootstrap-sass-official/assets/stylesheets/_bootstrap";
+
+@import "bootstrap/_bootstrap";
 
 .foo {
   .bar {
