@@ -1,11 +1,5 @@
 exclude:
-  - ".bower_components"
-  - ".tmp"
   - "node_modules"
-  - ".bowerrc"
-  - ".gitignore"
-  - ".ruby-gemset"
-  - ".ruby-version"
   - "bower.json"
   - "Gemfile"
   - "Gemfile.lock"

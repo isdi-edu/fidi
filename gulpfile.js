@@ -14,7 +14,7 @@ var path = require('path');
 // directorios principales
 var jekyllSitePath      = "_site";
 var tmpPath             = ".tmp";
-var vendorPath          = "_vendor";
+var vendorPath          = "vendor";
 var sassResourcesPath   = "_sass";
 var cssPath             = "css";
 var bowerComponentsPath = '.bower_components';
