@@ -62,7 +62,7 @@ gulp.task('bower:update', function() {
 });
 
 gulp.task('bower:copy', function(done) {
-  runSequence(['bower:copy:bootstrap', 'bower:copy:bourbon']);
+  runSequence(['bower:copy:bootstrap', 'bower:copy:bourbon'], done);
 });
 
 gulp.task('bower:copy:bootstrap', function(done) {
