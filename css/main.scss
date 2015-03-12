@@ -4,8 +4,10 @@
 @import "_bootstrap";
 @import "bourbon/_bourbon";
 
-.foo {
-  .bar {
-    color: red;
-  }
-}
+
+// CSS
+@import "_css/tipografia";
+
+
+// BLOQUES
+@import "_bloques/paraguas";

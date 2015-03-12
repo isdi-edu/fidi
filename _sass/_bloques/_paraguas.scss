@@ -1,0 +1,34 @@
+/*doc
+---
+title: Paragüas
+name: paraguas
+category: Bloques
+---
+
+```html_example
+<div class="paraguas">
+  <div class="container">
+    <span class="hidden-xs">Instituto Superior para el Desarrollo de Internet</span>
+    <a href="#">
+      <img class="paraguas__logo" src="../imgs/isdi_logo.png"/>
+    </a>
+  </div>
+</div>
+```
+
+
+
+*/
+
+.paraguas {
+  text-align: right;
+  padding: 7px 0 2px 0;
+  background: black;
+  color: $gris;
+  font-size: $font-size-xsmall;
+}
+
+.paraguas__logo {
+  height: 13px;
+  vertical-align: baseline;
+}
