@@ -1,0 +1,20 @@
+/*doc
+---
+title: Tipografía
+name: tipografia
+category: CSS
+---
+
+```html_example
+<h1>Título 1</h1>
+<h2>Título 2</h2>
+
+<p>Tamaño de letra base</p>
+<p class="small">Tamaño de letra pequeña</p>
+<p class="xsmall">Tamaño de letra muy pequeño</p>
+```
+*/
+
+.xsmall {
+  font-size: $font-size-xsmall;
+}
