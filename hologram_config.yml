@@ -5,7 +5,7 @@
 source: ./css
 
 # The directory that hologram will build to
-destination: ./_docs
+destination: ./.tmp/docs
 
 # The assets needed to build the docs (includes header.html,
 # footer.html, etc)

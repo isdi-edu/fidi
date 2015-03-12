@@ -1,5 +1,6 @@
 exclude:
   - ".bower_components"
+  - ".tmp"
   - "node_modules"
   - ".bowerrc"
   - ".gitignore"
@@ -12,5 +13,6 @@ exclude:
   - "hologram_config.yml"
   - "package.json"
   - "readme.md"
+
 sass:
     style: :compressed

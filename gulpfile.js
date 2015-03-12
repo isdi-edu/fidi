@@ -12,16 +12,11 @@ var path = require('path');
 ********************************************/
 
 // directorios principales
-var distPath            = "_site";
-var sourcesPath         = "src";
-var webPath             = "src/web";
-
-// ubicación donde se copian las librerías de terceros
+var jekyllSitePath      = "_site";
+var tmpPath             = ".tmp";
 var vendorPath          = "_vendor";
-
 var sassResourcesPath   = "_sass";
-
-// directorios temporales
+var cssPath             = "css";
 var bowerComponentsPath = '.bower_components';
 
 /********************************************/
@@ -30,8 +25,6 @@ var argv = require('yargs').argv;
 var $ = require('gulp-load-plugins')();
 var gulp = require('gulp');
 var nn = require('node-notifier');
-var browserSync = require('browser-sync');
-var reload = browserSync.reload;
 var runSequence = require('run-sequence');
 var spawn = require('child_process').spawn;
 var del = require('del');
@@ -77,6 +70,32 @@ gulp.task('bower:copy', function(done) {
 
 
 // ****************************************************
+// Compila site de plantillas de Jekyll
+// ****************************************************
+gulp.task('jekyll', function(done) {
+  var stdout = "",
+  hasErrors = false,
+  jekyll = spawn('jekyll', 
+                 ['build'],
+                 { stdio: [process.stdin, process.stdout, 'pipe']});
+
+  jekyll.stderr.on('data', function(data) {
+    hasErrors = true
+    process.stdout.write(data);
+  });
+
+  jekyll.on('close', function(code) {
+    if (hasErrors) {
+      reportAnError("Error compilando Jekyll, revisa la consola");
+    } else {
+      showMessage('Compilación de JEKYLL terminada');
+      if (isLivereloadLaunched()) $.livereload.changed("*.html");
+    }
+    return done();
+  });
+});
+
+// ****************************************************
 // Compila la documentación de la hoja de estilos
 // ****************************************************
 gulp.task('hologram', function(done) {
@@ -103,13 +122,8 @@ gulp.task('http', function() {
 gulp.task('watch', function() {
   $.livereload.listen();
 
-  gulp.watch([
-    path.join(sourcesPath, 'doc_assets/**/*'), 
-    path.join(sourcesPath, 'index.md'),
-    path.join(sassBasePath, '**/*')
-  ], ['hologram']);
-
-  gulp.watch([path.join(sassBasePath, "/**/*")], ['sass']);
+  gulp.watch(['_doc_assets/**/*', path.join(cssPath, '**/*')], ['hologram']);
+  gulp.watch(["**/*", "!.*/**", "!_site/**", "!_doc_assets/**", "!node_modules/**"], ['jekyll']);
 });
 
 
@@ -118,37 +132,8 @@ gulp.task('watch', function() {
 // ****************************************************
 gulp.task('clean', function(done) {
   del([
-    tmpPath + "/**",
-    distPath + "/**"
+    tmpPath + "/**"
   ], done);
-});
-
-
-// ****************************************************
-// Copia los ficheros necesarios de la versión distribuible
-// ****************************************************
-gulp.task('dist:copy', function(done) {
-  return gulp.src([tmpPath + "/**/*", webPath + "/**/*"])
-             .pipe(gulp.dest(distPath));
-});
-
-
-// ****************************************************
-// Despliega el prototipo
-// ****************************************************
-
-gulp.task('deploy:sync:dev', function (done) {
-  spawn('divshot', ['deploy', 'development'], { stdio: 'inherit' })
-    .on('close', function(code) {
-      return done();
-    });
-});
-
-gulp.task('deploy:sync:prod', function (done) {
-  spawn('divshot', ['deploy', 'production'], { stdio: 'inherit' })
-    .on('close', function(code) {
-      return done();
-    });
 });
 
 
@@ -191,27 +176,10 @@ if (argv.debug) {
 
 // Compila todo el código
 gulp.task('build', function(done) {
-  runSequence(['clean', 'bower'], 
-              ['styles', 'hologram'], 
-              done);
+  runSequence('clean', 'bower', ['jekyll', 'hologram'], done);
 });
 
 // Tarea para trabajar en el prototipo
 gulp.task('default', function (done) {
   runSequence('build', 'watch', 'http', done);
-});
-
-// Compila la versión de distribución
-gulp.task('dist', function(done) {
-  runSequence('build', 'dist:copy', done);
-});
-
-// Despliega la versión de distribución
-gulp.task('deploy:dev', function(done) {
-  runSequence('dist', 'deploy:sync:dev', done);
-});
-
-// Despliega la versión de distribución
-gulp.task('deploy:prod', function(done) {
-  runSequence('dist', 'deploy:sync:prod', done);
 });
