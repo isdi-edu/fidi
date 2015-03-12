@@ -62,10 +62,19 @@ gulp.task('bower:update', function() {
 });
 
 gulp.task('bower:copy', function(done) {
+  runSequence(['bower:copy:bootstrap', 'bower:copy:bourbon']);
+});
+
+gulp.task('bower:copy:bootstrap', function(done) {
   return gulp
-    .src(path.join(bowerComponentsPath, "/bootstrap-sass-official/assets/stylesheets/**/*"),
-         { base: "bootstrap-sass-official/assets/stylesheets"})
-    .pipe(gulp.dest(path.join(sassResourcesPath, "/bootstrap")))
+    .src(path.join(bowerComponentsPath, "/bootstrap-sass-official/assets/stylesheets/**/*"))
+    .pipe(gulp.dest(path.join(sassResourcesPath, "/bootstrap")));
+});
+
+gulp.task('bower:copy:bourbon', function(done) {
+  return gulp
+    .src(path.join(bowerComponentsPath, "/bourbon/app/assets/stylesheets/**/*"))
+    .pipe(gulp.dest(path.join(sassResourcesPath, "/bourbon")));
 });
 
 
