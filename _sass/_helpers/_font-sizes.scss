@@ -32,3 +32,11 @@
     font-size: $font-size-base;
   }
 }
+
+@mixin font-size-small() {
+  font-size: $font-size-small-mobile;
+
+  @media(min-width: $screen-sm-min) {
+    font-size: $font-size-small;
+  }
+}

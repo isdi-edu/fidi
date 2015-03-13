@@ -113,7 +113,7 @@ gulp.task('hologram', function(done) {
     hologram.on('close', function(code) {
         if (code > 0) return done('Exited with error code ' + code);
         else {
-          if (isLivereloadLaunched()) $.livereload.changed("*.html");
+          //if (isLivereloadLaunched()) $.livereload.changed("*.html");
         }
         return done();
     });
