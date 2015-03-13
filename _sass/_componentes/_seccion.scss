@@ -1,0 +1,72 @@
+/*doc
+---
+title: Seccion
+name: seccion
+category: Componentes
+---
+
+```html_example
+<div class="seccion">
+  <div class="seccion__titulo">Título de la <strong>sección</strong></div>
+  <div class="seccion__subtitulo">Subtítulo de la sección que suele ser más largo que el título y puede llegar a varias líneas</div>
+  <div class="seccion__cuerpo">
+    Contenido
+  </div>
+</div>
+```
+
+```html_example
+<div class="seccion seccion--oscura" style="background-color: #888">
+  <div class="seccion__titulo">Título de la <strong>sección</strong></div>
+  <div class="seccion__subtitulo">Subtítulo de la sección que suele ser más largo que el título y puede llegar a varias líneas</div>
+  <div class="seccion__cuerpo">
+    Contenido
+  </div>
+</div>
+```
+*/
+
+.seccion {
+  padding-top: $spacing-xlg-mobile;
+  padding-bottom: $spacing-xlg-mobile;
+  text-align: center;
+
+  background-size: cover;
+
+  @media(min-width: $screen-xs-min) {
+    padding-top: $spacing-xlg;
+    padding-bottom: $spacing-xlg;
+  }
+}
+
+.seccion--oscura {
+  color: white;
+}
+
+  .seccion__titulo {
+    @include margin-lg();
+
+    @include font-size-h1();
+    text-transform: uppercase;
+  }
+
+  .seccion__subtitulo {
+    @include margin-lg();
+    @include font-size-h3();
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .seccion__cuerpo {
+    > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+
+// THEMES
+.seccion {
+  &.theme--azul {
+    background-color: $azul;
+  }
+}

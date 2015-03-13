@@ -9,3 +9,23 @@
 .margin-lg {
   margin-bottom: $spacing-lg;
 }
+
+@mixin margin() {
+  margin-bottom: $spacing-mobile;
+  @media(min-width: $screen-sm-min) { margin-bottomm: $spacing;  }
+}
+
+@mixin margin-xs() {
+  margin-bottom: $spacing-xs-mobile;
+  @media(min-width: $screen-sm-min) { margin-bottomm: $spacing-xs;  }
+}
+
+@mixin margin-lg() {
+  margin-bottom: $spacing-lg-mobile;
+  @media(min-width: $screen-sm-min) { margin-bottomm: $spacing-lg;  }
+}
+
+@mixin margin-xlg() {
+  margin-bottom: $spacing-xlg-mobile;
+  @media(min-width: $screen-sm-min) { margin-bottomm: $spacing-xlg;  }
+}

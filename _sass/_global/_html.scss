@@ -1,4 +1,6 @@
 body, html {
+  @include font-size-base();
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
