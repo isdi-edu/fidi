@@ -1,0 +1,61 @@
+.top-navbar {
+  text-align: center;
+  margin-bottom: $spacing;
+}
+
+  .top-navbar__item {
+    position: relative;
+    display: none;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    font-size: $font-size-small;
+
+    @include transition(color 0.3s);
+
+    @media(min-width: $screen-sm-min) {
+      display: block;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 2px;
+    }
+
+    &.theme--azul {
+      &:after { background-color: $azul; }
+      &:hover { color: $azul; }
+    }
+
+    &.theme--azul-oscuro {
+      &:after { background-color: $azul-oscuro; }
+      &:hover { color: $azul-oscuro; }
+    }
+
+    &.theme--verde {
+      &:after { background-color: $verde; }
+      &:hover { color: $verde; }
+    }
+
+    &.theme--azul-claro {
+      &:after { background-color: $azul-claro; }
+      &:hover { color: $azul-claro; }
+    }
+
+    &.theme--rojo {
+      &:after { background-color: $rojo; }
+      &:hover { color: $rojo; }
+    }
+
+    &.theme--morado {
+      &:after { background-color: $morado; }
+      &:hover { color: $morado; }
+    }
+
+  }

@@ -21,30 +21,53 @@ category: Bloques
 */
 
 $cabecera-padding: $spacing; 
-$cabecera-logo-width-mobile: 100px;
 
 .cabecera {
-  position: relative;
   padding-bottom: $spacing-xs;
 
-  top: -$spacing-sm;
+  margin-top: -13px;
+  @media(min-width: $screen-sm-min) { 
+    margin-top: -16px;
+  }
 }
 
   .cabecera__logo {
     position: relative;
-    width: $cabecera-logo-width-mobile;
     border: 1px solid $gris;
+
+    width: 100px;
+    @media(min-width: 370px) { width: 130px; }
+    @media(min-width: 460px) { width: 150px; }
+
+    @media(min-width: $screen-sm-min) {
+      float: left;
+      width: 200px;
+    }
   }
 
   .cabecera__titulo {
     text-transform: uppercase;
-    font-size: $font-size-small;
     line-height: 1.5em;
     margin-top: 5px;
+    font-size: 14px;
+    
+    @media(min-width: $screen-sm-min) {
+      font-size: 17px;
+      padding-top: 47px;
+      padding-left: 216px;
+      margin-bottom: $spacing;
+    }
   }
 
   .cabecera__titulo-destacado {
+    font-weight: bold;
     font-size: 1.5em;
+
+    @media(min-width: 370px) { font-size: 1.8em; }
+    @media(min-width: 460px) { 
+      font-size: 2.3em; 
+      letter-spacing: -1px;
+    }
   }
 
   

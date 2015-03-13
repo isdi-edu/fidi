@@ -1,0 +1,31 @@
+/*doc
+---
+title: Inline list
+name: inline-list
+category: Componentes
+---
+
+```html_example
+<ul class="inline-list">
+  <li>Elemento1</li>
+  <li>Elemento2</li>
+  <li>Elemento3</li>
+</ul>
+```
+*/
+
+$inline-list-margin-elements: 15px;
+
+.inline-list {
+  list-style: none;
+  display: inline-block;
+
+  > li {
+    display: inline-block;
+    margin-right: $inline-list-margin-elements;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

@@ -22,13 +22,18 @@ category: Bloques
 
 .paraguas {
   text-align: right;
-  padding: 7px 0 2px 0;
   background: black;
   color: $gris;
   font-size: $font-size-xsmall;
+
+  padding: 7px 0 2px 0;
+  @media(min-width: $screen-sm-min) {
+    padding: 9px 0 5px 0;
+  }
 }
 
 .paraguas__logo {
-  height: 13px;
+  height: 11px;
   vertical-align: baseline;
+  margin-left: $spacing-xs;
 }

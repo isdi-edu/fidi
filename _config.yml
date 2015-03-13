@@ -8,5 +8,5 @@ exclude:
   - "package.json"
   - "readme.md"
 
-sass:
-    style: :compressed
+#sass:
+#    style: :compressed
