@@ -1,0 +1,32 @@
+$grid-gutter-width: 30px;
+
+/*
+--- PALETA DE COLORES -------------------------------
+*/
+
+$gris: #999;
+$gris-claro: #e2e2e2; 
+
+/*
+-- FUENTES ------------------------------------------
+*/
+$font-size-h1:     42px;
+$font-size-h2:     26px;
+$font-size-h3:     20px;
+$font-size-base:   16px;
+$font-size-small:  13px;
+$font-size-xsmall: 11px;
+
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$line-height-computed: 26px;
+$line-height-base: $line-height-computed / $font-size-base;
+
+/*
+-- MÁRGENES ------------------------------------------
+*/
+$spacing-base: $line-height-computed;
+
+$spacing-xs:  floor($spacing-base / 4); // 6px
+$spacing-sm:  $spacing-base / 2;        // 13px
+$spacing:     $spacing-base;            // 26px
+$spacing-lg:  $spacing-base * 2;        // 52px

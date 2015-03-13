@@ -1,0 +1,59 @@
+/*doc
+---
+title: Redes Sociales
+name: redes-sociales
+category: Bloques
+---
+
+```html_example 
+<div class="redes-sociales">
+  <div class="container">
+    <span class="redes-sociales__titulo">compartir en</span>
+    <ul class="redes-sociales__iconos">
+      <li><a href="#" class="redes-sociales__icono socicon" title="Facebook">b</a></li>
+      <li><a href="#" class="redes-sociales__icono socicon" title="Twitter">a</a></li>
+      <li><a href="#" class="redes-sociales__icono socicon" title="Google plus">c</a></li>
+      <li><a href="#" class="redes-sociales__icono socicon" title="Youtube">r</a></li>
+    </ul>
+  </div>
+</div>
+```
+*/
+
+.redes-sociales {
+  padding: 10px 0;
+  text-align: right;
+  background-color: $gris-claro;
+}
+
+.redes-sociales__titulo {
+  text-transform: uppercase; 
+  font-size: $font-size-xsmall;
+  color: $gris;
+}
+
+.redes-sociales__iconos {
+  list-style: none;
+  display: inline;
+  padding-left: 0;
+  > li {
+    display: inline-block;
+  }
+}
+
+.redes-sociales__icono {
+  $background-color: $gris;
+  padding: 5px;
+
+  background-color: $background-color;
+  border-radius: 100%;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  @include transition(background-color 0.5s);
+
+  &:hover {
+    background-color: darken($background-color, 10%);
+    color: white;
+  }
+}

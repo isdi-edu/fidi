@@ -1,13 +1,18 @@
 ---
 ---
-@import "_base/variables";
+@import "_global/variables";
 @import "_bootstrap";
 @import "bourbon/_bourbon";
 
+// BASE
+@import "_global/html";
 
-// CSS
-@import "_css/tipografia";
-
+// OBJETOS
+@import "_objetos/tipografia";
+@import "_objetos/fuentes";
+@import "_objetos/enlaces";
 
 // BLOQUES
 @import "_bloques/paraguas";
+@import "_bloques/cabecera";
+@import "_bloques/redes-sociales";

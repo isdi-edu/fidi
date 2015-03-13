@@ -1,0 +1,50 @@
+/*doc
+---
+title: Cabecera
+name: cabecera
+category: Bloques
+---
+
+```html_example
+<div class="cabecera">
+  <div class="container">
+    <img class="cabecera__logo" src="../imgs/fidi_logo.png" alt="FIDI" title="FIDI" />
+    <div class="cabecera__titulo">
+      Fundación internacional para el
+      <span class="cabecera__titulo-destacado">
+        desarrollo de <strong>internet</strong>
+      </span>
+    </div>
+  </div>
+</div>
+```
+*/
+
+$cabecera-padding: $spacing; 
+$cabecera-logo-width-mobile: 100px;
+
+.cabecera {
+  position: relative;
+  padding-bottom: $spacing-xs;
+
+  top: -$spacing-sm;
+}
+
+  .cabecera__logo {
+    position: relative;
+    width: $cabecera-logo-width-mobile;
+    border: 1px solid $gris;
+  }
+
+  .cabecera__titulo {
+    text-transform: uppercase;
+    font-size: $font-size-small;
+    line-height: 1.5em;
+    margin-top: 5px;
+  }
+
+  .cabecera__titulo-destacado {
+    font-size: 1.5em;
+  }
+
+  
