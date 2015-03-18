@@ -39,34 +39,56 @@ category: Componentes
   }
 }
 
-.seccion--oscura {
-  color: white;
-}
-
-  .seccion__titulo {
-    @include margin-lg();
-
-    @include font-size-h1();
-    text-transform: uppercase;
-  }
-
-  .seccion__subtitulo {
-    @include margin-lg();
-    @include font-size-h3();
-    font-weight: 600;
-    text-transform: uppercase;
-  }
-
-  .seccion__cuerpo {
-    > *:last-child {
-      margin-bottom: 0;
+  .seccion--oscura {
+    color: white;
+    a, a:hover {
+      color: white;
     }
   }
+
+  .seccion--pequena {
+    padding-top: $spacing-mobile;
+    padding-bottom: $spacing-mobile;
+
+    @media(min-width: $screen-xs-min) {
+      padding-top: $spacing;
+      padding-bottom: $spacing;
+    }
+  }
+
+.seccion__titulo {
+  @include margin-lg();
+
+  @include font-size-h1();
+  text-transform: uppercase;
+}
+
+.seccion__subtitulo {
+  @include margin-lg();
+  @include font-size-h3();
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.seccion__cuerpo {
+  > *:last-child {
+    margin-bottom: 0;
+  }
+}
 
 
 // THEMES
 .seccion {
   &.theme--azul {
     background-color: $azul;
+  }
+  &.theme--azul-oscuro {
+    background-color: $azul-oscuro;
+  }
+  &.theme--verde {
+    background-color: $verde;
+  }
+  &.theme--rojo {
+    background-color: $rojo;
   }
 }
