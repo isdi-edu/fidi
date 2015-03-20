@@ -1,0 +1,51 @@
+/*doc
+---
+title: Botón cuadrado
+name: boto-cuadrado
+category: Componentes
+---
+
+```html_example
+<a href="#" class="btn btn-cuadrado">
+  1
+</a>
+
+<a href="#" class="btn btn-cuadrado">
+  2
+</a>
+```
+
+```html_example
+<a href="#" class="btn btn-cuadrado btn-cuadrado--secondary is-active">
+  Botón grande
+</a>
+```
+*/
+
+.btn-cuadrado {
+  min-width: 40px;
+  border: 2px solid;
+  text-decoration: none;
+  opacity: 0.4;
+  @include transition (opacity 0.5s);
+  border-radius: 0;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.btn-cuadrado--secondary {
+  padding: 0.9em 2em;
+  opacity: 1;
+  @include transition (background-color 0.5s);
+
+  .seccion--oscura &:hover {
+    background-color: #fff;
+  }
+
+  .seccion--oscura.theme--verde-oscuro &:hover {
+    color: $verde-oscuro;
+  }
+}

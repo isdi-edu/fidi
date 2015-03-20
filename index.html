@@ -61,7 +61,10 @@
 		
 		<!--<script src="modernizr-2.8.2.min.js"></script>-->
     <script src="vendor/jquery/jquery.min.js" type="text/javascript" charset="utf-8"></script>
-		<script src="vendor/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js" type="text/javascript" charset="utf-8" async defer></script>
+		<script src="vendor/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js" type="text/javascript" charset="utf-8"></script>
+    <script src="vendor/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js" type="text/javascript" charset="utf-8"></script>
+    <script src="vendor/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/proyectos-sociales.js" type="text/javascript" charset="utf-8"></script>
 	</head>
 	<body>
 		
@@ -270,7 +273,7 @@ proyectos sociales</div>
     </div>
 
 
-    <div class="seccion seccion--oscura theme--azul-claro" style="background-image: url('imgs/proyectos_bk.jpg')">
+    <div class="seccion seccion--oscura theme--azul-claro js-seccion" style="background-image: url('imgs/proyectos_bk.jpg')">
       <div class="container">
         <div class="row">
           <div class="col-md-10 col-md-offset-1">
@@ -282,17 +285,88 @@ proyectos sociales</div>
               </p>
               <ul class="inline-list">
                 <li>
-                  <a href="#">
+                  <a href="#proyectos-ayuda-en-accion" data-proyecto-social>
                     <img src="imgs/proyectos/ayuda-en-accion_logo.png" alt="" class="img-circle proyecto-logo">
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="#proyectos-ashoka" data-proyecto-social>
                     <img src="imgs/proyectos/asoka_logo.png" alt="" class="img-circle proyecto-logo">
                   </a>
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="seccion seccion--oscura seccion--pequena theme--verde-oscuro seccion--proyectos js-seccion-proyectos" style="display:none">
+      <div class="seccion__triangulo-top js-proyectos-triangulo"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <button type="button" class="close seccion__cerrar js-proyectos-cerrar" aria-label="Cerrar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <div>
+
+              <div id="proyectos-ayuda-en-accion" style="display:none">
+
+                <div class="small margin-xs">PROYECTOS</div>
+
+                <div role="tabpanel">
+
+                  <ul class="proyectos-enum inline-list margin" role="tablist">
+                    <li role="presentation" class="active">
+                      <a href="#proyecto1" class="btn btn-cuadrado" role="tab" data-toggle="tab">1</a>
+                    </li>
+                    <li role="presentation">
+                      <a href="#proyecto2" class="btn btn-cuadrado" role="tab" data-toggle="tab">2</a>
+                    </li>
+                  </ul>
+
+                  <div class="tab-content">
+                    <div id="proyecto1" class="tab-pane fade in active">
+                      
+                      <div class="seccion__subtitulo">
+                        Propuesta para el uso de la geolocalización como instrumento de gestión y transparencia en los procesos y proyectos de ayuda en acción
+                      </div>
+                      <div class="seccion__cuerpo text-left">
+                        <div class="h3">Necesidad</div>
+                        <p>
+                          Análisis del lanzamiento de nueva web y blog independiente de la web corporativa de la Fundación para contar historias de jóvenes, escuelas, emprendedores sociales, empresas y demás actores que de alguna manera estén vinculados a Ashoka.
+                        </p>
+                        <div class="h3">Equipo</div>
+                        <p>
+                          3 voluntarios digitales + equipo de comunicación de Ashoka
+                        </p>
+                        <div class="text-center">
+                          <a href="#" class="btn btn-cuadrado btn-cuadrado--secondary is-active">
+                            Quiero participar
+                          </a>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div id="proyecto2" class="tab-pane fade">
+                      Proyecto 2
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- proyectos-pane -->
+
+
+              <div id="proyectos-ashoka" style="display:none">
+
+                <div class="small margin-xs">PROYECTOS ASHOKA</div>
+
+              </div> <!-- proyectos-pane -->
+
+
+            </div> <!-- proyectos-container -->
+            
           </div>
         </div>
       </div>
