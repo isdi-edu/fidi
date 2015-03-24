@@ -1,12 +1,22 @@
 $(function() {
 
-  var formulario = $("#participacionForm");
+  var $msgFormularioError = $(".js-formulario-error"),
+      $msgFormularioOk = $(".js-formulario-ok"),
+      $modalHeader = $(".js-modal-header"),
+      $loading = $(".js-frm-loading"),
+      $formulario = $("#participacionForm");
 
   $('#participarModal')
     .on('show.bs.modal', function (event) {
       var $button = $(event.relatedTarget);
       var nombreProyecto = $button.data('proyecto');
       var $modal = $(this);
+
+      // mostrando el formulario
+      $msgFormularioError.hide();
+      $msgFormularioOk.hide();
+      $modalHeader.show();
+      $formulario.show();
 
       // borrando formulario
       $modal.find("input").val("");
@@ -24,11 +34,7 @@ $(function() {
   $("#apuntarse-proyecto").on("click", function(event) {
       event.preventDefault();
 
-      var $msgFormularioError = $(".js-formulario-error"),
-          $msgFormularioOk = $(".js-formulario-ok"),
-          $modalHeader = $(".js-modal-header"),
-          $loading = $(".js-frm-loading"),
-          $formulario = $("#participacionForm");
+
 
       if (!$formulario.valid()) return;
 
