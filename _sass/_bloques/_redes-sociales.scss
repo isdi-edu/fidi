@@ -27,18 +27,23 @@ category: Bloques
 }
 
 .redes-sociales__titulo {
-  position: relative;
-  top: -0.4em;
-  
   display: inline-block;
   margin-right: $spacing-xs;
 
   text-transform: uppercase; 
   font-size: $font-size-small;
   color: $gris;
+
+  @media(max-width: $screen-xs-max) {
+    position: relative;
+    top: -0.2em;
+  }
 }
 
 .redes-sociales__iconos {
+  position: relative;
+  top: 2px;
+
   list-style: none;
   display: inline;
   padding-left: 0;
@@ -66,14 +71,14 @@ category: Bloques
     text-decoration: none;
 
     @media(min-width: $screen-sm-min) {
-      font-size: 14px;
+      font-size: 18px;
       line-height: normal;
     }
 
     @include transition(background-color 0.5s);
 
     &:hover, &:focus, &:active {
-      background-color: darken($background-color, 10%);
+      background-color: darken($background-color, 20%);
       color: white;
       text-decoration: none;
     }
