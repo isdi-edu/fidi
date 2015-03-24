@@ -77,6 +77,8 @@ category: Componentes
 }
 
 .seccion__cuerpo {
+  position: relative;
+  
   > *:last-child {
     margin-bottom: 0;
   }

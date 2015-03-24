@@ -23,11 +23,12 @@ category: Bloques
 $cabecera-padding: $spacing; 
 
 .cabecera {
-  padding-bottom: $spacing-xs;
+  padding-bottom: $spacing;
 
   margin-top: -13px;
   @media(min-width: $screen-sm-min) { 
     margin-top: -16px;
+    padding-bottom: $spacing-xs;
   }
 }
 

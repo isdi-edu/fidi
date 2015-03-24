@@ -1,4 +1,9 @@
-.video-embed { 
+.video-embed {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.video-embed__inner { 
   position: relative; 
   padding-bottom: 56.25%; 
   height: 0; 
@@ -6,9 +11,9 @@
   max-width: 100%; 
 } 
 
-.video-embed iframe, 
-.video-embed object, 
-.video-embed embed { 
+.video-embed__inner iframe, 
+.video-embed__inner object, 
+.video-embed__inner embed { 
   position: absolute; 
   top: 0; 
   left: 0; 

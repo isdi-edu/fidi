@@ -1,11 +1,14 @@
 .top-navbar {
   text-align: center;
   margin-bottom: $spacing;
+
+  @media(max-width: $screen-xs-max) {
+    display: none;
+  }
 }
 
   .top-navbar__item {
     position: relative;
-    display: none;
 
     text-decoration: none;
     text-transform: uppercase;
@@ -14,10 +17,6 @@
     font-size: $font-size-small;
 
     @include transition(color 0.3s);
-
-    @media(min-width: $screen-sm-min) {
-      display: block;
-    }
 
     &:after {
       content: "";

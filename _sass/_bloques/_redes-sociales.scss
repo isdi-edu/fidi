@@ -27,8 +27,14 @@ category: Bloques
 }
 
 .redes-sociales__titulo {
+  position: relative;
+  top: -0.4em;
+  
+  display: inline-block;
+  margin-right: $spacing-xs;
+
   text-transform: uppercase; 
-  font-size: $font-size-xsmall;
+  font-size: $font-size-small;
   color: $gris;
 }
 
@@ -36,24 +42,38 @@ category: Bloques
   list-style: none;
   display: inline;
   padding-left: 0;
+
   > li {
     display: inline-block;
+    margin-right: 8px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 
-.redes-sociales__icono {
-  $background-color: $gris;
-  padding: 5px;
+  .redes-sociales__icono {
+    $background-color: $gris;
+    padding: 8px;
 
-  background-color: $background-color;
-  border-radius: 100%;
-  color: white;
-  font-size: 14px;
-  text-decoration: none;
-  @include transition(background-color 0.5s);
-
-  &:hover {
-    background-color: darken($background-color, 10%);
+    background-color: $background-color;
+    border-radius: 100%;
+    
     color: white;
+    font-size: 22px;
+    line-height: 2em;
+    text-decoration: none;
+
+    @media(min-width: $screen-sm-min) {
+      font-size: 14px;
+      line-height: normal;
+    }
+
+    @include transition(background-color 0.5s);
+
+    &:hover {
+      background-color: darken($background-color, 10%);
+      color: white;
+    }
   }
-}

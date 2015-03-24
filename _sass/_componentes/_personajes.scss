@@ -105,7 +105,7 @@ $personajes-breackpoint2: 650px;
 
 .personajes__item {
   position: relative;
-  width: 250px;
+  width: 220px;
 
   @media(max-width: ($personajes-breackpoint1 - 1)) { margin:0 auto $spacing; }
   @media(min-width: $personajes-breackpoint1) { 
