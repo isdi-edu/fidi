@@ -5,7 +5,7 @@ name: personajes
 category: Componentes
 ---
 
-### Ancho completo del navegador
+## Ancho completo del navegador
 
 ```html_example
 <div class="personajes personajes--full-width">
@@ -34,13 +34,15 @@ category: Componentes
 </div>
 ```
 
-### 5 personajes
+## 5 personajes
+
+Podemos marcar a un personaje como directora aplicándole el estilo `personajes__item--directora`.
 
 ```html_example
 <div class="container">
   <div class="personajes personajes--five">
     <ul class="personajes__wrapper">
-      <li class="personajes__item">
+      <li class="personajes__item personajes__item--directora">
         <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
         <div class="personajes__datos">
           <div class="personajes__datos-inner">
@@ -59,7 +61,7 @@ category: Componentes
 </div>
 ```
 
-### 6 personajes
+## 6 personajes
 
 ```html_example
 <div class="container">
@@ -85,8 +87,11 @@ category: Componentes
 </div>
 ```
 */
+
 $personajes-breackpoint1: 450px;
 $personajes-breackpoint2: 650px;
+
+$personaje-datos-bg: rgba(0,0,0,0.8);
 
 .personajes--full-width {
   @media(max-width: ($personajes-breackpoint1 - 1)) {
@@ -145,12 +150,29 @@ $personajes-breackpoint2: 650px;
   }
 }
 
-.personajes__foto {
-  width: 100%;
-}
+    .personajes__foto {
+      width: 100%;
+    }
 
 
+    .personajes__item--directora {
+      &:before { 
+        position: absolute;
+        content: 'Directora';
 
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+
+        text-align: center;
+        background-color: $personaje-datos-bg;
+
+        font-size: 0.8em;
+        color: #fff;
+        font-weight: bold;
+      }
+    }
 
 
 /* *********************************************** *\
@@ -165,7 +187,7 @@ $personajes-breackpoint2: 650px;
   padding: 7px 50px 7px 10px;
 
   color: white;
-  background-color: rgba(0,0,0,0.8);
+  background-color: $personaje-datos-bg;
   line-height: 1.1;
 }
 

@@ -1,538 +1,347 @@
 ---
+layout: default
+title: Fundación internacional para el Desarrollo de Internet - FIDI
 ---
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-	<head>
-		<meta charset="utf-8">
-		<title> </title>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<div class="container">
+  <ul class="top-navbar inline-list">
+    <li><a href="#fundacion" class="top-navbar__item theme--azul js-scroll" data-duration="500">La fundación</a></li>
+    <li><a href="#voluntarios" class="top-navbar__item theme--azul-oscuro js-scroll" data-duration="750">Voluntarios digitales</a></li>
+    <li><a href="#compromiso" class="top-navbar__item theme--verde js-scroll" data-duration="1000">Compromiso con el cambio educativo</a></li>
+    <li><a href="#impulso" class="top-navbar__item theme--azul-claro js-scroll" data-duration="1250">Impulso a proyectos sociales</a></li>
+    <li><a href="#ayuda" class="top-navbar__item theme--rojo js-scroll" data-duration="1500">Ayuda a la formación</a></li>
+    <li><a href="#patronato" class="top-navbar__item theme--morado js-scroll" data-duration="1750">Patronato</a></li>
+  </ul>
+</div>
 
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="css/main.css">
-		<!--<link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-		
-		<link rel="icon" type="image/png" href="/favicon-196x196.png" sizes="196x196">
-		<link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
-		<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
-		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
-		
-		<meta name="msapplication-TileColor" content="#376184">
-		<meta name="msapplication-TileImage" content="/mstile-144x144.png">
-		
-		<meta name="revisit-after" content="7 days" />
-		<meta name="robots" content="index,follow" />
-		
-		<meta name="application-name" content="CSSconf EU">
-		
-		<meta name="description" content="">
-		<meta name="keywords" content="" />
-		
-		<meta name="publisher" content="CSSconf EU" />
-		<meta name="author" content="CSSconf EU Team" />
-		<meta property="fb:admins" content="100000951092646" />
+<div class="redes-sociales">
+  <div class="container">
+		<span class="redes-sociales__titulo">compartir en</span>
 
-		<meta property="og:type" content="website">
-		<meta property="og:title" content="CSSconf EU 2014">
-		<meta name="og:description" content="A description." />
-		<meta property="og:image" content="http://domain/image.png">
+		<ul class="redes-sociales__iconos">
+		  <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ 'http://fidi.isdi.es' |  url_encode }}" class="redes-sociales__icono socicon js-social-share" target="_blank" title="Compartir en  Facebook">b</a></li>
 
-		<meta name="twitter:site" content="@CSSconfeu" />
-		<meta name="twitter:title" content="CSSconf EU 2014" />
-		<meta name="twitter:description" content="A description" />
-		<meta name="twitter:image" content="http://domain/image.png" />
-		
-		<meta name="google-site-verification" content="" />-->
-		
-		<!--[if lt IE 9]>
-			<script src="scripts/html5shiv.min.js"></script>
-			<script src="/respond.min.js"></script>  
-		<![endif]-->
-		
-		<!--<script src="modernizr-2.8.2.min.js"></script>-->
-    <script src="vendor/jquery/jquery.min.js" type="text/javascript"></script>
-		<script src="vendor/bootstrap-sass-official/assets/javascripts/bootstrap/tooltip.js" type="text/javascript"></script>
-    <script src="vendor/bootstrap-sass-official/assets/javascripts/bootstrap/tab.js" type="text/javascript"></script>
-    <script src="vendor/bootstrap-sass-official/assets/javascripts/bootstrap/transition.js" type="text/javascript"></script>
-    <script src="vendor/modernizr/modernizr.js" type="text/javascript"></script>
-    <script src="vendor/detectizr/dist/detectizr.min.js" type="text/javascript"></script>
-    <script src="vendor/jquery.scrollTo/jquery.scrollTo.js" type="text/javascript"></script>
-    <script src="js/proyectos-sociales.js" type="text/javascript"></script>
-    <script src="js/social-share.js" type="text/javascript"></script>
-    <script src="js/main.js" type="text/javascript"></script>
-	</head>
-	<body>
-		<a name="top"></a>
-		<div class="paraguas">
-		  <div class="container">
-			<span class="hidden-xs">Instituto Superior para el Desarrollo de Internet</span>
-			<a href="#">
-			  <img class="paraguas__logo" src="../imgs/isdi_logo.png"/>
-			</a>
-		  </div>
-		</div>
+		  <li><a href="https://twitter.com/intent/tweet?text=Fundaci%C3%B3n%20internacional%20para%20el%20Desarrollo%20de%20Internet&url={{ 'http://fidi.isdi.es' |  url_encode }}" class="redes-sociales__icono socicon js-social-share" target="_blank" title="Compartir en  Twitter">a</a></li>
 
-		<div class="cabecera">
-		  <div class="container">
-			<img class="cabecera__logo" src="../imgs/fidi_logo.png" alt="FIDI" title="FIDI" />
-			<div class="cabecera__titulo">
-			  Fundación internacional para el <br/>
-			  <span class="cabecera__titulo-destacado">
-				desarrollo de <strong>internet</strong>
-			  </span>
-			</div>
-
-			<ul class="top-navbar inline-list">
-				<li><a href="#fundacion" class="top-navbar__item theme--azul js-scroll" data-duration="500">La fundación</a></li>
-        <li><a href="#voluntarios" class="top-navbar__item theme--azul-oscuro js-scroll" data-duration="750">Voluntarios digitales</a></li>
-        <li><a href="#compromiso" class="top-navbar__item theme--verde js-scroll" data-duration="1000">Compromiso con el cambio educativo</a></li>
-        <li><a href="#impulso" class="top-navbar__item theme--azul-claro js-scroll" data-duration="1250">Impulso a proyectos sociales</a></li>
-        <li><a href="#ayuda" class="top-navbar__item theme--rojo js-scroll" data-duration="1500">Ayuda a la formación</a></li>
-        <li><a href="#patronato" class="top-navbar__item theme--morado js-scroll" data-duration="1750">Patronato</a></li>
-			</ul>
-		  </div>
-		</div>
-
-		<div class="redes-sociales">
-		  <div class="container">
-  			<span class="redes-sociales__titulo">compartir en</span>
-
-  			<ul class="redes-sociales__iconos">
-  			  <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ 'http://fidi.isdi.es' |  url_encode }}" class="redes-sociales__icono socicon js-social-share" target="_blank" title="Compartir en  Facebook">b</a></li>
-
-  			  <li><a href="https://twitter.com/intent/tweet?text=Fundaci%C3%B3n%20internacional%20para%20el%20Desarrollo%20de%20Internet&url={{ 'http://fidi.isdi.es' |  url_encode }}" class="redes-sociales__icono socicon js-social-share" target="_blank" title="Compartir en  Twitter">a</a></li>
-
-  			  <li><a href="https://plus.google.com/share?url={{ 'http://fidi.isdi.es' |  url_encode }}" class="redes-sociales__icono socicon js-social-share" target="_blank" title="Compartir en Google plus">c</a></li>
-  			</ul>
-		  </div>
-		</div>
-		
+		  <li><a href="https://plus.google.com/share?url={{ 'http://fidi.isdi.es' |  url_encode }}" class="redes-sociales__icono socicon js-social-share" target="_blank" title="Compartir en Google plus">c</a></li>
+		</ul>
+  </div>
+</div>
 
 
 
-    <a name="fundacion"></a>
-    <div class="seccion seccion--oscura theme--azul" style="background-image: url('imgs/fundacion_bk.jpg')">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-            <div class="seccion__titulo">Digitalizamos el <strong>cambio social</strong></div>
-            <div class="seccion__subtitulo">Formamos y asesoramos a las ong y emprendedores sociales para desarrollarse en el mundo digital</div>
-            <div class="seccion__cuerpo">
-              <p>El Instituto Superior de Desarrollo de Internet (ISDI) pone a disposición de la sociedad su amplia experiencia digital para ayudar a crecer a las ONG, emprendedores sociales, y en general a cualquier entidad que participe en proyectos sociales.</p>
-              <p>Ese es el objetivo de la FIDI: transformar digitalmente a los que apuestan por el progreso social.</p>
-            </div>
-          </div>
+
+<a name="fundacion"></a>
+<div class="seccion seccion--oscura theme--azul" style="background-image: url('imgs/fundacion_bk.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="seccion__titulo">Digitalizamos el <strong>cambio social</strong></div>
+        <div class="seccion__subtitulo">Formamos y asesoramos a las ong y emprendedores sociales para desarrollarse en el mundo digital</div>
+        <div class="seccion__cuerpo">
+          <p>El Instituto Superior de Desarrollo de Internet (ISDI) pone a disposición de la sociedad su amplia experiencia digital para ayudar a crecer a las ONG, emprendedores sociales, y en general a cualquier entidad que participe en proyectos sociales.</p>
+          <p>Ese es el objetivo de la FIDI: transformar digitalmente a los que apuestan por el progreso social.</p>
         </div>
       </div>
     </div>
+  </div>
+</div>
 
 
 
 
-    <a name="voluntarios"></a>
-    <div class="seccion seccion--oscura theme--azul-oscuro" style="background-image: url('imgs/voluntarios_bk.jpg')">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-            <div class="seccion__titulo">Voluntarios <strong>digitales</strong></div>
-            <div class="seccion__subtitulo">Donan su tiempo y su experiencia para digitalizar u optimizar 
+<a name="voluntarios"></a>
+<div class="seccion seccion--oscura theme--azul-oscuro" style="background-image: url('imgs/voluntarios_bk.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="seccion__titulo">Voluntarios <strong>digitales</strong></div>
+        <div class="seccion__subtitulo">Donan su tiempo y su experiencia para digitalizar u optimizar 
 proyectos sociales</div>
-            <div class="seccion__cuerpo">
-              <p>En la FIDI contamos con un equipo de voluntarios, especialistas en diferentes disciplinas digitales. </p>
-              <p>Diseñamos la estrategia digital, la web corporativa, sistemas de crowfunding, estrategias de redes sociales, y en general cualquier ayuda digital tanto para entidades no lucrativas como para emprendedores sociales. Con ellos compartimos un mismo objetivo: generar un cambio positivo en la sociedad. En nuestro caso, nuestra ayuda más eficiente es la digital.</p>
-              <p><em>* 1 HORA DONADA EQUIVALE 1 FIDI COINS</em></p>
+        <div class="seccion__cuerpo">
+          <p>En la FIDI contamos con un equipo de voluntarios, especialistas en diferentes disciplinas digitales. </p>
+          <p>Diseñamos la estrategia digital, la web corporativa, sistemas de crowfunding, estrategias de redes sociales, y en general cualquier ayuda digital tanto para entidades no lucrativas como para emprendedores sociales. Con ellos compartimos un mismo objetivo: generar un cambio positivo en la sociedad. En nuestro caso, nuestra ayuda más eficiente es la digital.</p>
+          <p><em>* 1 HORA DONADA EQUIVALE 1 FIDI COINS</em></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="personajes personajes--full-width">
+  <ul class="personajes__wrapper">
+    <li class="personajes__item">
+      <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
+      <div class="personajes__datos">
+        <span class="personajes__nombre">David Ruíz Montes</span>
+        <span class="personajes__cargo">Consultor</span> 
+        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
+        <a href="#" class="personajes__icono socicon">j</a>
+      </div>
+    </li>
+    <li class="personajes__item">
+      <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
+      <div class="personajes__datos">
+        <span class="personajes__nombre">David Ruíz Montes</span>
+        <span class="personajes__cargo">Consultor</span> 
+        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
+        <a href="#" class="personajes__icono socicon">j</a>
+      </div>
+    </li>
+    <li class="personajes__item">
+      <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
+      <div class="personajes__datos">
+        <span class="personajes__nombre">David Ruíz Montes</span>
+        <span class="personajes__cargo">Consultor</span> 
+        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
+        <a href="#" class="personajes__icono socicon">j</a>
+      </div>
+    </li>
+    <li class="personajes__item">
+      <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
+      <div class="personajes__datos">
+        <span class="personajes__nombre">David Ruíz Montes</span>
+        <span class="personajes__cargo">Consultor</span> 
+        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
+        <a href="#" class="personajes__icono socicon">j</a>
+      </div>
+    </li>
+    <li class="personajes__item">
+      <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
+      <div class="personajes__datos">
+        <span class="personajes__nombre">David Ruíz Montes</span>
+        <span class="personajes__cargo">Consultor</span> 
+        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
+        <a href="#" class="personajes__icono socicon">j</a>
+      </div>
+    </li>
+    <li class="personajes__item">
+      <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
+      <div class="personajes__datos">
+        <span class="personajes__nombre">David Ruíz Montes</span>
+        <span class="personajes__cargo">Consultor</span> 
+        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
+        <a href="#" class="personajes__icono socicon">j</a>
+      </div>
+    </li>
+    <li class="personajes__item">
+      <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
+      <div class="personajes__datos">
+        <span class="personajes__nombre">David Ruíz Montes</span>
+        <span class="personajes__cargo">Consultor</span> 
+        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
+        <a href="#" class="personajes__icono socicon">j</a>
+      </div>
+    </li>
+    <li class="personajes__item">
+      <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
+      <div class="personajes__datos">
+        <span class="personajes__nombre">David Ruíz Montes</span>
+        <span class="personajes__cargo">Consultor</span> 
+        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
+        <a href="#" class="personajes__icono socicon">j</a>
+      </div>
+    </li>
+    <li class="personajes__item">
+      <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
+      <div class="personajes__datos">
+        <span class="personajes__nombre">David Ruíz Montes</span>
+        <span class="personajes__cargo">Consultor</span> 
+        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
+        <a href="#" class="personajes__icono socicon">j</a>
+      </div>
+    </li>
+    <li class="personajes__item">
+      <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
+      <div class="personajes__datos">
+        <span class="personajes__nombre">David Ruíz Montes</span>
+        <span class="personajes__cargo">Consultor</span> 
+        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
+        <a href="#" class="personajes__icono socicon">j</a>
+      </div>
+    </li>
+    <li class="personajes__item">
+      <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
+      <div class="personajes__datos">
+        <span class="personajes__nombre">David Ruíz Montes</span>
+        <span class="personajes__cargo">Consultor</span> 
+        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
+        <a href="#" class="personajes__icono socicon">j</a>
+      </div>
+    </li>
+    <li class="personajes__item">
+      <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
+      <div class="personajes__datos">
+        <span class="personajes__nombre">David Ruíz Montes</span>
+        <span class="personajes__cargo">Consultor</span> 
+        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
+        <a href="#" class="personajes__icono socicon">j</a>
+      </div>
+    </li>
+  </ul>
+</div>
+
+
+
+
+<a name="compromiso"></a>
+<div class="seccion seccion--oscura theme--verde" style="background-image: url('imgs/compromiso_bk.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="seccion__titulo"><strong>Compromiso</strong> con el cambio educativo</div>
+        <div class="seccion__subtitulo">En tve1: fidi entrega el premio expokids 14 de fundación créate al colegio más emprendedor</div>
+        <div class="seccion__cuerpo">
+          <div class="video-embed">
+            <div class="video-embed__inner">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/DiE5okEJBlU?list=UUMsJswJ4DgS1As_W_MeVQxg" frameborder="0" allowfullscreen></iframe> 
             </div>
           </div>
         </div>
       </div>
     </div>
-
-    <div class="personajes personajes--full-width">
-      <ul class="personajes__wrapper">
-        <li class="personajes__item">
-          <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
-          <div class="personajes__datos">
-            <span class="personajes__nombre">David Ruíz Montes</span>
-            <span class="personajes__cargo">Consultor</span> 
-            <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
-            <a href="#" class="personajes__icono socicon">j</a>
-          </div>
-        </li>
-        <li class="personajes__item">
-          <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
-          <div class="personajes__datos">
-            <span class="personajes__nombre">David Ruíz Montes</span>
-            <span class="personajes__cargo">Consultor</span> 
-            <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
-            <a href="#" class="personajes__icono socicon">j</a>
-          </div>
-        </li>
-        <li class="personajes__item">
-          <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
-          <div class="personajes__datos">
-            <span class="personajes__nombre">David Ruíz Montes</span>
-            <span class="personajes__cargo">Consultor</span> 
-            <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
-            <a href="#" class="personajes__icono socicon">j</a>
-          </div>
-        </li>
-        <li class="personajes__item">
-          <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
-          <div class="personajes__datos">
-            <span class="personajes__nombre">David Ruíz Montes</span>
-            <span class="personajes__cargo">Consultor</span> 
-            <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
-            <a href="#" class="personajes__icono socicon">j</a>
-          </div>
-        </li>
-        <li class="personajes__item">
-          <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
-          <div class="personajes__datos">
-            <span class="personajes__nombre">David Ruíz Montes</span>
-            <span class="personajes__cargo">Consultor</span> 
-            <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
-            <a href="#" class="personajes__icono socicon">j</a>
-          </div>
-        </li>
-        <li class="personajes__item">
-          <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
-          <div class="personajes__datos">
-            <span class="personajes__nombre">David Ruíz Montes</span>
-            <span class="personajes__cargo">Consultor</span> 
-            <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
-            <a href="#" class="personajes__icono socicon">j</a>
-          </div>
-        </li>
-        <li class="personajes__item">
-          <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
-          <div class="personajes__datos">
-            <span class="personajes__nombre">David Ruíz Montes</span>
-            <span class="personajes__cargo">Consultor</span> 
-            <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
-            <a href="#" class="personajes__icono socicon">j</a>
-          </div>
-        </li>
-        <li class="personajes__item">
-          <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
-          <div class="personajes__datos">
-            <span class="personajes__nombre">David Ruíz Montes</span>
-            <span class="personajes__cargo">Consultor</span> 
-            <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
-            <a href="#" class="personajes__icono socicon">j</a>
-          </div>
-        </li>
-        <li class="personajes__item">
-          <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
-          <div class="personajes__datos">
-            <span class="personajes__nombre">David Ruíz Montes</span>
-            <span class="personajes__cargo">Consultor</span> 
-            <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
-            <a href="#" class="personajes__icono socicon">j</a>
-          </div>
-        </li>
-        <li class="personajes__item">
-          <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
-          <div class="personajes__datos">
-            <span class="personajes__nombre">David Ruíz Montes</span>
-            <span class="personajes__cargo">Consultor</span> 
-            <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
-            <a href="#" class="personajes__icono socicon">j</a>
-          </div>
-        </li>
-        <li class="personajes__item">
-          <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
-          <div class="personajes__datos">
-            <span class="personajes__nombre">David Ruíz Montes</span>
-            <span class="personajes__cargo">Consultor</span> 
-            <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
-            <a href="#" class="personajes__icono socicon">j</a>
-          </div>
-        </li>
-        <li class="personajes__item">
-          <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
-          <div class="personajes__datos">
-            <span class="personajes__nombre">David Ruíz Montes</span>
-            <span class="personajes__cargo">Consultor</span> 
-            <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
-            <a href="#" class="personajes__icono socicon">j</a>
-          </div>
-        </li>
-      </ul>
-    </div>
+  </div>
+</div>
 
 
 
 
-    <a name="compromiso"></a>
-    <div class="seccion seccion--oscura theme--verde" style="background-image: url('imgs/compromiso_bk.jpg')">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-            <div class="seccion__titulo"><strong>Compromiso</strong> con el cambio educativo</div>
-            <div class="seccion__subtitulo">En tve1: fidi entrega el premio expokids 14 de fundación créate al colegio más emprendedor</div>
-            <div class="seccion__cuerpo">
-              <div class="video-embed">
-                <div class="video-embed__inner">
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/DiE5okEJBlU?list=UUMsJswJ4DgS1As_W_MeVQxg" frameborder="0" allowfullscreen></iframe> 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-
-    <a name="impulso"></a>
-    <div class="seccion seccion--oscura theme--azul-claro js-seccion" style="background-image: url('imgs/proyectos_bk.jpg')">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-            <div class="seccion__titulo">Impulso a <strong>proyectos sociales</strong></div>
-            <div class="seccion__subtitulo">Ayudamos a las ong y emprendedores a diseñar e implantar proyectos sociales sirviéndose de medios digitales</div>
-            <div class="seccion__cuerpo">
-              <p>
-                Nuestro equipo de voluntarios digitales se pone manos a la obra para digitalizar nuevos proyectos sociales o redefinir cualquier proyecto social ya en marcha, para multiplicar su impacto social. Estamos digitalizando los siguientes proyectos:
-              </p>
-              <ul class="inline-list">
-                <li>
-                  <a href="#proyectos-ayuda-en-accion" data-proyecto-social>
-                    <img src="imgs/proyectos/ayuda-en-accion_logo.png" alt="" class="img-circle proyecto-logo">
-                  </a>
-                </li>
-                <li>
-                  <a href="#proyectos-ashoka" data-proyecto-social>
-                    <img src="imgs/proyectos/asoka_logo.png" alt="" class="img-circle proyecto-logo">
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="seccion seccion--oscura seccion--pequena theme--verde-oscuro seccion--proyectos js-seccion-proyectos" style="display:none">
-      <div class="seccion__triangulo-top js-proyectos-triangulo"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-            <button type="button" class="close seccion__cerrar js-proyectos-cerrar" aria-label="Cerrar">
-              <span aria-hidden="true">&times;</span>
-            </button>
-            <div>
-
-              <div id="proyectos-ayuda-en-accion" style="display:none">
-
-                <div class="small margin-xs">PROYECTOS</div>
-
-                <div role="tabpanel">
-
-                  <ul class="proyectos-enum inline-list margin" role="tablist">
-                    <li role="presentation" class="active">
-                      <a href="#proyecto1" class="btn btn-cuadrado" role="tab" data-toggle="tab">1</a>
-                    </li>
-                    <li role="presentation">
-                      <a href="#proyecto2" class="btn btn-cuadrado" role="tab" data-toggle="tab">2</a>
-                    </li>
-                  </ul>
-
-                  <div class="tab-content">
-                    <div id="proyecto1" class="tab-pane fade in active">
-                      
-                      <div class="seccion__subtitulo">
-                        Propuesta para el uso de la geolocalización como instrumento de gestión y transparencia en los procesos y proyectos de ayuda en acción
-                      </div>
-                      <div class="seccion__cuerpo text-left">
-                        <div class="proyecto__contenido">
-                          <div class="h3">Necesidad</div>
-                          <p>
-                            Análisis del lanzamiento de nueva web y blog independiente de la web corporativa de la Fundación para contar historias de jóvenes, escuelas, emprendedores sociales, empresas y demás actores que de alguna manera estén vinculados a Ashoka.
-                          </p>
-                          <div class="h3">Equipo</div>
-                          <p>
-                            3 voluntarios digitales + equipo de comunicación de Ashoka
-                          </p>
-                        </div>
-                        <div class="proyecto__fidis-wrapper">
-                          <span class="proyecto__fidi-text">
-                            Fidi coins  
-                          </span>
-                          <span class="proyecto__fidi-number">
-                            30
-                          </span>
-                          <span class="proyecto__fidi-horas">
-                            horas
-                          </span>
-                        </div>
-
-                        <div class="text-center">
-                          <a href="#" class="btn btn-cuadrado btn-cuadrado--secondary is-active">
-                            Quiero participar
-                          </a>
-                        </div>
-                      </div>
-
-                    </div>
-
-                    <div id="proyecto2" class="tab-pane fade">
-                      Proyecto 2
-                    </div>
-                  </div>
-                </div>
-              </div> <!-- proyectos-pane -->
-
-
-              <div id="proyectos-ashoka" style="display:none">
-
-                <div class="small margin-xs">PROYECTOS ASHOKA</div>
-
-              </div> <!-- proyectos-pane -->
-
-
-            </div> <!-- proyectos-container -->
-            
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-
-    <a name="ayuda"></a>
-    <div class="seccion seccion--oscura theme--rojo" style="background-image: url('imgs/formacion_bk.jpg')">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-            <div class="seccion__titulo">Ayuda a la <strong>formación</strong></div>
-            <div class="seccion__subtitulo">
-              Apostamos por los agentes del cambio social. Formamos a las organizaciones y emprendedores que apuestan por ayudar a los demás
-            </div>
-
-            <div class="seccion__cuerpo margin">
-              <p>Con el fin de ampliar los recursos y las herramientas digitales, e, incluso, motivar ideas innovadoras para aplicar en proyectos sociales, la FIDI pone a disposición de las ONG y emprendedores sociales una serie de becas formativas. Las Becas FIDI ofrecen a todos aquellos agentes que intervienen en proyectos sociales, la posibilidad de realizar cualquier programa que se imparte en el <a href="http://www.isdi.es/" target="_blank">ISDI</a>. </p>
-
-              <p>Nuestro interés es dotar a estos agentes del conocimiento digital necesario para multiplicar los efectos sociales de sus proyectos.</p>
-            </div>
-          </div>
-
-            <div class="personajes personajes--five">
-              <ul class="personajes__wrapper">
-                <li class="personajes__item">
-                  <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
-                  <div class="personajes__datos">
-                    <div class="personajes__datos-inner">
-                      <span class="personajes__nombre">David Ruíz Montes</span>
-                      <span class="personajes__cargo">Consultor</span> 
-                      <a href="#" class="personajes__icono socicon">j</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="personajes__item">
-                  <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
-                  <div class="personajes__datos">
-                    <div class="personajes__datos-inner">
-                      <span class="personajes__nombre">David Ruíz Montes</span>
-                      <span class="personajes__cargo">Consultor</span> 
-                      <a href="#" class="personajes__icono socicon">j</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="personajes__item">
-                  <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
-                  <div class="personajes__datos">
-                    <div class="personajes__datos-inner">
-                      <span class="personajes__nombre">David Ruíz Montes</span>
-                      <span class="personajes__cargo">Consultor</span> 
-                      <a href="#" class="personajes__icono socicon">j</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="personajes__item">
-                  <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
-                  <div class="personajes__datos">
-                    <div class="personajes__datos-inner">
-                      <span class="personajes__nombre">David Ruíz Montes</span>
-                      <span class="personajes__cargo">Consultor</span> 
-                      <a href="#" class="personajes__icono socicon">j</a>
-                    </div>
-                  </div>
-                </li>
-                <li class="personajes__item">
-                  <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
-                  <div class="personajes__datos">
-                    <div class="personajes__datos-inner">
-                      <span class="personajes__nombre">David Ruíz Montes</span>
-                      <span class="personajes__cargo">Consultor</span> 
-                      <a href="#" class="personajes__icono socicon">j</a>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-
-
-
-    <div class="seccion seccion--pequena seccion--oscura theme--rojo">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-10 col-md-offset-1">
-            <div class="media">
-              <div class="media-left">
-                <img class="media-object img-circle" src="imgs/unicef_logo.jpg">
-              </div>
-              <div class="media-body text-left">
-                Somos aliados de Unicef en temas de formación digital y estamos colaborando con la transformación digital de la ONG. Ya hemos formado al Comité Directivo y sus Managers, y actualmente 16 trabajadores están realizando cursos de Internet Academi.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    
-    <a name="patronato"></a>
-    <div class="seccion seccion--oscura theme--morado" style="background-image: url('imgs/patronato_bk.jpg')">
-      <div class="container">
-        <div class="seccion__titulo">
-          <strong>Patronato</strong>
-        </div>
-
-        <div class="personajes personajes--six">
-          <ul class="personajes__wrapper">
-            <li class="personajes__item">
-              <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
-              <div class="personajes__datos">
-                <div class="personajes__datos-inner">
-                  <span class="personajes__nombre">David Ruíz Montes</span>
-                  <span class="personajes__cargo">Consultor</span> 
-                  <a href="#" class="personajes__icono socicon">j</a>
-                </div>
-              </div>
+<a name="impulso"></a>
+<div class="seccion seccion--oscura theme--azul-claro js-seccion" style="background-image: url('imgs/proyectos_bk.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="seccion__titulo">Impulso a <strong>proyectos sociales</strong></div>
+        <div class="seccion__subtitulo">Ayudamos a las ong y emprendedores a diseñar e implantar proyectos sociales sirviéndose de medios digitales</div>
+        <div class="seccion__cuerpo">
+          <p>
+            Nuestro equipo de voluntarios digitales se pone manos a la obra para digitalizar nuevos proyectos sociales o redefinir cualquier proyecto social ya en marcha, para multiplicar su impacto social. Estamos digitalizando los siguientes proyectos:
+          </p>
+          <ul class="inline-list">
+            <li>
+              <a href="#proyectos-ayuda-en-accion" data-proyecto-social>
+                <img src="imgs/proyectos/ayuda-en-accion_logo.png" alt="" class="img-circle proyecto-logo">
+              </a>
             </li>
+            <li>
+              <a href="#proyectos-ashoka" data-proyecto-social>
+                <img src="imgs/proyectos/asoka_logo.png" alt="" class="img-circle proyecto-logo">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="seccion seccion--oscura seccion--pequena theme--verde-oscuro seccion--proyectos js-seccion-proyectos" style="display:none">
+  <div class="seccion__triangulo-top js-proyectos-triangulo"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <button type="button" class="close seccion__cerrar js-proyectos-cerrar" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div>
+
+          <div id="proyectos-ayuda-en-accion" style="display:none">
+
+            <div class="small margin-xs">PROYECTOS</div>
+
+            <div role="tabpanel">
+
+              <ul class="proyectos-enum inline-list margin" role="tablist">
+                <li role="presentation" class="active">
+                  <a href="#proyecto1" class="btn btn-cuadrado" role="tab" data-toggle="tab">1</a>
+                </li>
+                <li role="presentation">
+                  <a href="#proyecto2" class="btn btn-cuadrado" role="tab" data-toggle="tab">2</a>
+                </li>
+              </ul>
+
+              <div class="tab-content">
+                <div id="proyecto1" class="tab-pane fade in active">
+                  
+                  <div class="seccion__subtitulo">
+                    Propuesta para el uso de la geolocalización como instrumento de gestión y transparencia en los procesos y proyectos de ayuda en acción
+                  </div>
+                  <div class="seccion__cuerpo text-left">
+                    <div class="proyecto__contenido">
+                      <div class="h3">Necesidad</div>
+                      <p>
+                        Análisis del lanzamiento de nueva web y blog independiente de la web corporativa de la Fundación para contar historias de jóvenes, escuelas, emprendedores sociales, empresas y demás actores que de alguna manera estén vinculados a Ashoka.
+                      </p>
+                      <div class="h3">Equipo</div>
+                      <p>
+                        3 voluntarios digitales + equipo de comunicación de Ashoka
+                      </p>
+                    </div>
+                    <div class="proyecto__fidis-wrapper">
+                      <span class="proyecto__fidi-text">
+                        Fidi coins  
+                      </span>
+                      <span class="proyecto__fidi-number">
+                        30
+                      </span>
+                      <span class="proyecto__fidi-horas">
+                        horas
+                      </span>
+                    </div>
+
+                    <div class="text-center">
+                      <a href="#" class="btn btn-cuadrado btn-cuadrado--secondary is-active">
+                        Quiero participar
+                      </a>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div id="proyecto2" class="tab-pane fade">
+                  Proyecto 2
+                </div>
+              </div>
+            </div>
+          </div> <!-- proyectos-pane -->
+
+
+          <div id="proyectos-ashoka" style="display:none">
+
+            <div class="small margin-xs">PROYECTOS ASHOKA</div>
+
+          </div> <!-- proyectos-pane -->
+
+
+        </div> <!-- proyectos-container -->
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<a name="ayuda"></a>
+<div class="seccion seccion--oscura theme--rojo" style="background-image: url('imgs/formacion_bk.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="seccion__titulo">Ayuda a la <strong>formación</strong></div>
+        <div class="seccion__subtitulo">
+          Apostamos por los agentes del cambio social. Formamos a las organizaciones y emprendedores que apuestan por ayudar a los demás
+        </div>
+
+        <div class="seccion__cuerpo margin">
+          <p>Con el fin de ampliar los recursos y las herramientas digitales, e, incluso, motivar ideas innovadoras para aplicar en proyectos sociales, la FIDI pone a disposición de las ONG y emprendedores sociales una serie de becas formativas. Las Becas FIDI ofrecen a todos aquellos agentes que intervienen en proyectos sociales, la posibilidad de realizar cualquier programa que se imparte en el <a href="http://www.isdi.es/" target="_blank">ISDI</a>. </p>
+
+          <p>Nuestro interés es dotar a estos agentes del conocimiento digital necesario para multiplicar los efectos sociales de sus proyectos.</p>
+        </div>
+      </div>
+
+        <div class="personajes personajes--five">
+          <ul class="personajes__wrapper">
             <li class="personajes__item">
               <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
               <div class="personajes__datos">
@@ -588,29 +397,103 @@ proyectos sociales</div>
 
       </div>
     </div>
+  </div>
+</div>
 
-    <div class="page-footer">
-      <div class="margin-sm">
-        <ul class="inline-list">
-          <li><a href="#">Aviso legal</a></li>
-          <li><a href="#">Política de privacidad</a></li>
-          <li><a href="#">Cookies</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
+
+
+
+
+<div class="seccion seccion--pequena seccion--oscura theme--rojo">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="media">
+          <div class="media-left">
+            <img class="media-object img-circle" src="imgs/unicef_logo.jpg">
+          </div>
+          <div class="media-body text-left">
+            Somos aliados de Unicef en temas de formación digital y estamos colaborando con la transformación digital de la ONG. Ya hemos formado al Comité Directivo y sus Managers, y actualmente 16 trabajadores están realizando cursos de Internet Academi.
+          </div>
+        </div>
       </div>
-      <a href="#top" class="go-to-top-icon js-scroll-top">
-        <span class="sr-only">
-          Ir al comienzo de la página
-        </span>
-      </a>
+    </div>
+  </div>
+</div>
+
+
+
+<a name="patronato"></a>
+<div class="seccion seccion--oscura theme--morado" style="background-image: url('imgs/patronato_bk.jpg')">
+  <div class="container">
+    <div class="seccion__titulo">
+      <strong>Patronato</strong>
     </div>
 
-		<script>
-      $(function () {
-        $('[data-toggle="tooltip"]').tooltip({
-          trigger: 'hover click'
-        });
-      });
-    </script>
-	</body>
-</html>
+    <div class="personajes personajes--six">
+      <ul class="personajes__wrapper">
+        <li class="personajes__item">
+          <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
+          <div class="personajes__datos">
+            <div class="personajes__datos-inner">
+              <span class="personajes__nombre">David Ruíz Montes</span>
+              <span class="personajes__cargo">Consultor</span> 
+              <a href="#" class="personajes__icono socicon">j</a>
+            </div>
+          </div>
+        </li>
+        <li class="personajes__item">
+          <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
+          <div class="personajes__datos">
+            <div class="personajes__datos-inner">
+              <span class="personajes__nombre">David Ruíz Montes</span>
+              <span class="personajes__cargo">Consultor</span> 
+              <a href="#" class="personajes__icono socicon">j</a>
+            </div>
+          </div>
+        </li>
+        <li class="personajes__item">
+          <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
+          <div class="personajes__datos">
+            <div class="personajes__datos-inner">
+              <span class="personajes__nombre">David Ruíz Montes</span>
+              <span class="personajes__cargo">Consultor</span> 
+              <a href="#" class="personajes__icono socicon">j</a>
+            </div>
+          </div>
+        </li>
+        <li class="personajes__item">
+          <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
+          <div class="personajes__datos">
+            <div class="personajes__datos-inner">
+              <span class="personajes__nombre">David Ruíz Montes</span>
+              <span class="personajes__cargo">Consultor</span> 
+              <a href="#" class="personajes__icono socicon">j</a>
+            </div>
+          </div>
+        </li>
+        <li class="personajes__item">
+          <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
+          <div class="personajes__datos">
+            <div class="personajes__datos-inner">
+              <span class="personajes__nombre">David Ruíz Montes</span>
+              <span class="personajes__cargo">Consultor</span> 
+              <a href="#" class="personajes__icono socicon">j</a>
+            </div>
+          </div>
+        </li>
+        <li class="personajes__item">
+          <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
+          <div class="personajes__datos">
+            <div class="personajes__datos-inner">
+              <span class="personajes__nombre">David Ruíz Montes</span>
+              <span class="personajes__cargo">Consultor</span> 
+              <a href="#" class="personajes__icono socicon">j</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</div>
