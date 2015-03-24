@@ -5,8 +5,10 @@ name: personajes
 category: Componentes
 ---
 
+### Ancho completo del navegador
+
 ```html_example
-<div class="personajes">
+<div class="personajes personajes--full-width">
   <ul class="personajes__wrapper">
     <li class="personajes__item">
       <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
@@ -17,31 +19,65 @@ category: Componentes
         <a href="#" class="personajes__icono socicon">j</a>
       </div>
     </li>
-    <li class="personajes__item">
-      <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
-      <div class="personajes__datos">
-        <span class="personajes__nombre">David Ruíz Montes</span>
-        <span class="personajes__cargo">Consultor</span> 
-        <span class="personajes__coins">6 Fidi coins</span> 
-        <a href="#" class="personajes__icono socicon">j</a>
-      </div>
-    </li>
+    <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
+    <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
+    <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
+    <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
+    <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
+    <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
+    <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
+    <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
+    <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
+    <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
+    <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
   </ul>
 </div>
 ```
-*/
 
+### 5 personajes
+
+```html_example
+<div class="container">
+  <div class="personajes personajes--five">
+    <ul class="personajes__wrapper">
+      <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
+      <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
+      <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
+      <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
+      <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
+    </ul>
+  </div>
+</div>
+```
+
+### 6 personajes
+
+```html_example
+<div class="container">
+  <div class="personajes personajes--six">
+    <ul class="personajes__wrapper">
+      <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
+      <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
+      <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
+      <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
+      <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
+      <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
+    </ul>
+  </div>
+</div>
+```
+*/
 $personajes-breackpoint1: 450px;
 $personajes-breackpoint2: 650px;
-$personajes-breackpoint3: 950px;
-$personajes-breackpoint4: 1250px;
 
 .personajes {
-  background-color: black;
-
   @media(max-width: ($personajes-breackpoint1 - 1)) {
     padding: $spacing-lg 0;
   }
+}
+
+.personajes--full-width {
+  background-color: black;
 }
 
 .personajes__wrapper {
@@ -54,27 +90,56 @@ $personajes-breackpoint4: 1250px;
 .personajes__item {
   position: relative;
   width: 250px;
-  @media(max-width: ($personajes-breackpoint1 - 1)) {
-    margin:0 auto $spacing;
-  }
-  @media(min-width: $personajes-breackpoint1) {
-    float: left;
+
+  @media(max-width: ($personajes-breackpoint1 - 1)) { margin:0 auto $spacing; }
+  @media(min-width: $personajes-breackpoint1) { 
+    float: left; 
     width: 50%;
   }
-  @media(min-width: $personajes-breackpoint2) {
-    width: 33.33333%;
+  @media(min-width: $personajes-breackpoint2) { width: 33.3333%; }
+
+  .personajes--full-width & {
+    @media(min-width: 950px) { width: 25%; }
+    @media(min-width: 1250px) { width: 16.6666%; }
   }
-  @media(min-width: $personajes-breackpoint3) {
-    width: 25%;
+
+  .personajes--five & {
+
+    .theme--rojo & {
+      @media(min-width: $personajes-breackpoint2) { 
+          border-right: 1px solid #bd5879; 
+          border-bottom: 1px solid #bd5879;
+      }
+    }
+
+    @media(min-width: $screen-md-min) { width: 20%; }
   }
-  @media(min-width: $personajes-breackpoint4) {
-    width: 16.6666%;
+
+  .personajes--six & {
+    
+    .theme--morado & {
+      @media(min-width: $personajes-breackpoint2) { 
+          border-right: 1px solid #b480c2; 
+          border-bottom: 1px solid #b480c2;
+      }
+    }
+
+    @media(min-width: $screen-md-min) { width: 25%; }
+    @media(min-width: $screen-lg-min) { width: 16.6666%; }
   }
 }
 
 .personajes__foto {
   width: 100%;
 }
+
+
+
+
+
+/* *********************************************** *\
+    #DATOS DE LOS PERSONAJES
+\* *********************************************** */
 
 .personajes__datos {
   position: absolute;
@@ -127,15 +192,17 @@ $personajes-breackpoint4: 1250px;
   height: 32px;
   line-height: 32px;
   display: block;
+  font-size: $font-size-base-mobile;
   background-color: white;
   border-radius: 100%;
-  color: black;
+
+  color: black!important;
   text-decoration: none;
   text-align: center;
   @include transition(background-color 0.3s);
 
   &:hover {
-    color: white;
+    color: white!important;
     border: 1px solid white;
     background-color: black;
   }

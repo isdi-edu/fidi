@@ -29,7 +29,7 @@ $(function() {
     event.preventDefault();
 
     var $seccionProyectos = $(".js-seccion-proyectos");
-    $seccionProyectos.fadeOut('fast');
+    $seccionProyectos.hide();
   });
 
 });

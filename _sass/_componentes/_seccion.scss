@@ -87,6 +87,7 @@ category: Componentes
   position: absolute;
   top: -15px;
   left: 50%;
+  @include transition(margin-left 0.2s);
 }
 
 .seccion__cerrar {
