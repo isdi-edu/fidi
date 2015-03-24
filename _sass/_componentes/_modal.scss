@@ -1,0 +1,59 @@
+/*
+  Estilos sobreescritos del componente modal de bootstrap
+*/
+.modal-content {
+  padding: 25px;
+}
+
+.modal-header {
+  border-bottom: none;
+
+  .close {
+    position: relative;
+    top: -30px;
+    right: -20px;
+    font-size: 45px;
+  }
+}
+
+.modal-footer {
+  padding-top: 0;
+  border-top: 0;
+  text-align: left;
+}
+
+.modal-title {
+  line-height: 1.2;
+}
+
+.theme--verde-oscuro {
+  .modal-content {
+    color: #fff;
+    background-color: $verde-oscuro;
+  }
+  .form-control {
+    background-color: darken($verde-oscuro, 10%); 
+    color: #fff;
+    border: none;
+
+    &:focus {
+      background-color: darken($verde-oscuro, 20%); 
+    }
+  }
+
+  input::-webkit-input-placeholder {
+     color: #fff;
+  }
+
+  :-moz-placeholder { /* Firefox 18- */
+     color: #fff;  
+  }
+
+  ::-moz-placeholder {  /* Firefox 19+ */
+     color: #fff;  
+  }
+
+  input:-ms-input-placeholder {  
+     color: #fff;  
+  }
+}

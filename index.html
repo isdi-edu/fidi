@@ -290,7 +290,7 @@ proyectos sociales</div>
                     </div>
 
                     <div class="text-center">
-                      <a href="#" class="btn btn-cuadrado btn-cuadrado--secondary is-active">
+                      <a href="#" class="btn btn-cuadrado btn-cuadrado--secondary is-active" data-toggle="modal" data-target="#participarModal" data-proyecto="Propuesta para el uso de la geolocalización como instrumento de gestión y transparencia en los procesos y proyectos de ayuda en acción">
                         Quiero participar
                       </a>
                     </div>
@@ -497,3 +497,69 @@ proyectos sociales</div>
 
   </div>
 </div>
+
+
+
+<div class="modal fade theme--verde-oscuro seccion--oscura" id="participarModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="ajax-loading js-frm-loading" style="display:none">
+        <img class="ajax-loading__icon" src="imgs/ajax-loader.svg"/>
+      </div>
+      <div class="modal-header js-modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">
+          Participa en el proyecto
+          "<span class="js-nombre-proyecto"></span>
+        </h4>
+      </div>
+      <div class="modal-body">
+
+        <form id="participacionForm">
+
+          <div class="alert alert-danger js-formulario-error" style="display: none">
+            No se ha podido enviar el correo electrónico, disculpa las molestias.
+            Vuelva a intentarlo nuevamente yi no consigue enviar el correo, 
+            ponte en contacto con nosotros por teléfono en el: <strong>900 814 144</strong>
+          </div>
+ 
+          <input type="hidden" id="proyecto" class="js-hidden-proyecto" />
+
+          <div class="form-group">
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
+          </div>
+
+          <div class="form-group">
+            <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos" required>
+          </div>
+
+          <div class="form-group">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+          </div>
+
+          <div class="form-group">
+            <select class="form-control" id="edicionMib" name="edicionMib" required>
+              <option value="">- Edición del MIB -</option>
+              <option value="1">1ª edición</option>
+              <option value="2">2ª edición</option>
+              <option value="3">3ª edición</option>
+              <option value="4">4ª edición</option>
+              <option value="5">5ª edición</option>
+            </select>
+          </div>
+
+          <a class="btn btn-cuadrado btn-cuadrado--secondary" id="apuntarse-proyecto">Apuntarme</a>
+
+        </form>
+      </div>
+
+      <div class="js-formulario-ok text-center" style="display: none">
+        <p>
+          Hemos recibido correctamente tu petición :) <br/>
+          En breve nos pondremos en contacto contigo.
+        </p>
+        <a class="btn btn-cuadrado btn-cuadrado--secondary" data-dismiss="modal">Cerrar</a>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
