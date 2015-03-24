@@ -9,7 +9,8 @@
     "detectizr": "~2.0.0",
     "fastclick": "~1.0.1",
     "respondJs": "~1.4.2",
-    "bourbon": "~4.2.1"
+    "bourbon": "~4.2.1",
+    "jquery.scrollTo": "~2.1.0"
   },
   "overrides": {
     "modernizr": {

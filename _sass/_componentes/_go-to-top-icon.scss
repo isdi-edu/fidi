@@ -1,0 +1,15 @@
+.go-to-top-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: $gray url("../imgs/icon_top.png") no-repeat center;
+  background-size: 20px;
+
+  @include transition(background-color 0.3s);
+
+  &:hover {
+    background-color: #000;
+    border: 1px solid #fff;
+  }
+}

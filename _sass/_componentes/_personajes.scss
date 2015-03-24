@@ -40,7 +40,16 @@ category: Componentes
 <div class="container">
   <div class="personajes personajes--five">
     <ul class="personajes__wrapper">
-      <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
+      <li class="personajes__item">
+        <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
+        <div class="personajes__datos">
+          <div class="personajes__datos-inner">
+            <span class="personajes__nombre">Javier Rodríguez Zapatero</span>
+            <span class="personajes__cargo">Optimist Google & ISDI</span> 
+            <a href="#" class="personajes__icono socicon">j</a>
+          </div>
+        </div>
+      </li>
       <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
       <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
       <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
@@ -56,7 +65,16 @@ category: Componentes
 <div class="container">
   <div class="personajes personajes--six">
     <ul class="personajes__wrapper">
-      <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
+      <li class="personajes__item">
+        <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
+        <div class="personajes__datos">
+          <div class="personajes__datos-inner">
+            <span class="personajes__nombre">Javier Rodríguez Zapatero</span>
+            <span class="personajes__cargo">Optimist Google & ISDI</span> 
+            <a href="#" class="personajes__icono socicon">j</a>
+          </div>
+        </div>
+      </li>
       <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
       <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
       <li class="personajes__item"><img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" /></li>
@@ -70,13 +88,11 @@ category: Componentes
 $personajes-breackpoint1: 450px;
 $personajes-breackpoint2: 650px;
 
-.personajes {
+.personajes--full-width {
   @media(max-width: ($personajes-breackpoint1 - 1)) {
     padding: $spacing-lg 0;
   }
-}
 
-.personajes--full-width {
   background-color: black;
 }
 
@@ -206,4 +222,45 @@ $personajes-breackpoint2: 650px;
     border: 1px solid white;
     background-color: black;
   }
+}
+
+html.desktop .personajes--six , html.desktop .personajes--five {
+
+  .personajes__cargo:after { display: none; }
+
+  @media(min-width: $screen-sm-min) {
+
+    .personajes__datos {
+      top: 0;
+      text-align: center;
+      opacity: 0;
+      @include transition(opacity 0.5s);
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .personajes__datos-inner {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 38%;
+
+      padding-left: $spacing-sm;
+      padding-right: $spacing-sm;
+    }
+
+    .personajes__nombre, .personajes__cargo {
+      display: block;
+      margin-bottom: 10px;
+    }  
+
+    .personajes__icono {
+      position: static;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+    }
+  }  
 }
