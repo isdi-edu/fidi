@@ -58,12 +58,12 @@ $(function() {
         edicionMib = $("#edicionMib"),
         proyecto = $("#proyecto");
 
-    return "Se ha rellenado una petición de participación:\n\n" +
-           "Proyecto: " + proyecto.val() + "\n" +
-           "Nombre: " + nombre.val() + "\n" +
-           "Apellidos: " + apellidos.val() + "\n" +
-           "Email: " + email.val() + "\n" +
-           "Edición MIB: " + edicionMib.val() + "\n";
+    return "Se ha rellenado una petición de participación:\n\n\n" +
+           "Proyecto: " + proyecto.val() + "\n\n" +
+           "Nombre: " + nombre.val() + "\n\n" +
+           "Apellidos: " + apellidos.val() + "\n\n" +
+           "Email: " + email.val() + "\n\n" +
+           "Edición MIB: " + edicionMib.val() + "\n\n";
   }
 
   function send(body, successCallback, errorCallback) {
