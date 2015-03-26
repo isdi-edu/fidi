@@ -1,0 +1,68 @@
+{% if include.proyectos.size > 1 %}
+<div class="small margin-xs">PROYECTOS</div>
+{% endif %}
+
+<div role="tabpanel">
+
+  {% if include.proyectos.size > 1 %}
+  <ul class="proyectos-enum inline-list margin" role="tablist">
+    
+    {% for proyecto in include.proyectos %}
+
+    <li role="presentation" {% if forloop.first %}class="active"{% endif %}>
+      <a href="#proyecto{{ forloop.index }}" class="btn btn-cuadrado" role="tab" data-toggle="tab">{{ forloop.index }}</a>
+    </li>
+
+    {% endfor %}
+
+  </ul>
+
+  <div class="tab-content">
+  {% else %}
+    <div class="tab-content" style="padding-top: 50px">
+  {% endif %}
+
+    {% for proyecto in include.proyectos %}
+
+    <div id="proyecto{{ forloop.index }}" 
+         class="tab-pane fade {% if forloop.first %}in active{% endif %}">
+      
+      <div class="seccion__subtitulo">
+        {{ proyecto.nombre }}
+      </div>
+      <div class="seccion__cuerpo text-left">
+        <div class="proyecto__contenido">
+          <div class="h3">Necesidad</div>
+          <p>
+            {{ proyecto.necesidad }}
+          </p>
+          <div class="h3">Equipo</div>
+          <p>
+            {{ proyecto.equipo }}
+          </p>
+        </div>
+        <div class="proyecto__fidis-wrapper">
+          <span class="proyecto__fidi-text">
+            Fidi coins  
+          </span>
+          <span class="proyecto__fidi-number">
+            {{ proyecto.horas }}
+          </span>
+          <span class="proyecto__fidi-horas">
+            horas
+          </span>
+        </div>
+
+        <div class="text-center">
+          <a href="#" class="btn btn-cuadrado btn-cuadrado--secondary is-active" data-toggle="modal" data-target="#participarModal" data-proyecto="{{ proyecto.nombre}}">
+            Quiero participar
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    {% endfor %}
+
+  </div>
+</div>

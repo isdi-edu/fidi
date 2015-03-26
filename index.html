@@ -36,12 +36,7 @@ title: Fundación internacional para el Desarrollo de Internet - FIDI
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
-        <div class="seccion__titulo">Digitalizamos el <strong>cambio social</strong></div>
-        <div class="seccion__subtitulo">Formamos y asesoramos a las ong y emprendedores sociales para desarrollarse en el mundo digital</div>
-        <div class="seccion__cuerpo">
-          <p>El Instituto Superior de Desarrollo de Internet (ISDI) pone a disposición de la sociedad su amplia experiencia digital para ayudar a crecer a las ONG, emprendedores sociales, y en general a cualquier entidad que participe en proyectos sociales.</p>
-          <p>Ese es el objetivo de la FIDI: transformar digitalmente a los que apuestan por el progreso social.</p>
-        </div>
+        {% include secciones/la-fundacion.liquid %}
       </div>
     </div>
   </div>
@@ -55,14 +50,9 @@ title: Fundación internacional para el Desarrollo de Internet - FIDI
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
-        <div class="seccion__titulo">Voluntarios <strong>digitales</strong></div>
-        <div class="seccion__subtitulo">Donan su tiempo y su experiencia para digitalizar u optimizar 
-proyectos sociales</div>
-        <div class="seccion__cuerpo">
-          <p>En la FIDI contamos con un equipo de voluntarios, especialistas en diferentes disciplinas digitales. </p>
-          <p>Diseñamos la estrategia digital, la web corporativa, sistemas de crowfunding, estrategias de redes sociales, y en general cualquier ayuda digital tanto para entidades no lucrativas como para emprendedores sociales. Con ellos compartimos un mismo objetivo: generar un cambio positivo en la sociedad. En nuestro caso, nuestra ayuda más eficiente es la digital.</p>
-          <p><em>* 1 HORA DONADA EQUIVALE 1 FIDI COINS</em></p>
-        </div>
+        
+          {% include secciones/voluntarios.liquid %}
+
       </div>
     </div>
   </div>
@@ -96,20 +86,13 @@ proyectos sociales</div>
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
-        <div class="seccion__titulo"><strong>Compromiso</strong> con el cambio educativo</div>
-        <div class="seccion__subtitulo">En tve1: fidi entrega el premio expokids 14 de fundación créate al colegio más emprendedor</div>
-        <div class="seccion__cuerpo">
-          <div class="video-embed">
-            <div class="video-embed__inner">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/DiE5okEJBlU?list=UUMsJswJ4DgS1As_W_MeVQxg" frameborder="0" allowfullscreen></iframe> 
-            </div>
-          </div>
-        </div>
+
+        {% include secciones/compromiso.liquid %}
+
       </div>
     </div>
   </div>
 </div>
-
 
 
 
@@ -118,25 +101,9 @@ proyectos sociales</div>
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
-        <div class="seccion__titulo">Impulso a <strong>proyectos sociales</strong></div>
-        <div class="seccion__subtitulo">Ayudamos a las ong y emprendedores a diseñar e implantar proyectos sociales sirviéndose de medios digitales</div>
-        <div class="seccion__cuerpo">
-          <p>
-            Nuestro equipo de voluntarios digitales se pone manos a la obra para digitalizar nuevos proyectos sociales o redefinir cualquier proyecto social ya en marcha, para multiplicar su impacto social. Estamos digitalizando los siguientes proyectos:
-          </p>
-          <ul class="inline-list">
-            <li>
-              <a href="#proyectos-ayuda-en-accion" data-proyecto-social data-default>
-                <img src="imgs/proyectos/ayuda-en-accion_logo.png" alt="" class="img-circle proyecto-logo">
-              </a>
-            </li>
-            <li>
-              <a href="#proyectos-ashoka" data-proyecto-social>
-                <img src="imgs/proyectos/asoka_logo.png" alt="" class="img-circle proyecto-logo">
-              </a>
-            </li>
-          </ul>
-        </div>
+
+        {% include secciones/proyectos-sociales.liquid %}
+
       </div>
     </div>
   </div>
@@ -150,78 +117,17 @@ proyectos sociales</div>
         <button type="button" class="close seccion__cerrar js-proyectos-cerrar" aria-label="Cerrar">
           <span aria-hidden="true">&times;</span>
         </button>
+
         <div>
-
           <div id="proyectos-ayuda-en-accion" style="display:none">
-
-            <div class="small margin-xs">PROYECTOS</div>
-
-            <div role="tabpanel">
-
-              <ul class="proyectos-enum inline-list margin" role="tablist">
-                <li role="presentation" class="active">
-                  <a href="#proyecto1" class="btn btn-cuadrado" role="tab" data-toggle="tab">1</a>
-                </li>
-                <li role="presentation">
-                  <a href="#proyecto2" class="btn btn-cuadrado" role="tab" data-toggle="tab">2</a>
-                </li>
-              </ul>
-
-              <div class="tab-content">
-                <div id="proyecto1" class="tab-pane fade in active">
-                  
-                  <div class="seccion__subtitulo">
-                    Propuesta para el uso de la geolocalización como instrumento de gestión y transparencia en los procesos y proyectos de ayuda en acción
-                  </div>
-                  <div class="seccion__cuerpo text-left">
-                    <div class="proyecto__contenido">
-                      <div class="h3">Necesidad</div>
-                      <p>
-                        Análisis del lanzamiento de nueva web y blog independiente de la web corporativa de la Fundación para contar historias de jóvenes, escuelas, emprendedores sociales, empresas y demás actores que de alguna manera estén vinculados a Ashoka.
-                      </p>
-                      <div class="h3">Equipo</div>
-                      <p>
-                        3 voluntarios digitales + equipo de comunicación de Ashoka
-                      </p>
-                    </div>
-                    <div class="proyecto__fidis-wrapper">
-                      <span class="proyecto__fidi-text">
-                        Fidi coins  
-                      </span>
-                      <span class="proyecto__fidi-number">
-                        30
-                      </span>
-                      <span class="proyecto__fidi-horas">
-                        horas
-                      </span>
-                    </div>
-
-                    <div class="text-center">
-                      <a href="#" class="btn btn-cuadrado btn-cuadrado--secondary is-active" data-toggle="modal" data-target="#participarModal" data-proyecto="Propuesta para el uso de la geolocalización como instrumento de gestión y transparencia en los procesos y proyectos de ayuda en acción">
-                        Quiero participar
-                      </a>
-                    </div>
-                  </div>
-
-                </div>
-
-                <div id="proyecto2" class="tab-pane fade">
-                  Proyecto 2
-                </div>
-              </div>
-            </div>
-          </div> <!-- proyectos-pane -->
-
+            {% include proyectos.liquid proyectos = site.data.proyectos-ayuda-en-accion %}
+          </div>
 
           <div id="proyectos-ashoka" style="display:none">
-
-            <div class="small margin-xs">PROYECTOS ASHOKA</div>
-
+            {% include proyectos.liquid proyectos = site.data.proyectos-ashoka %}
           </div> <!-- proyectos-pane -->
 
-
         </div> <!-- proyectos-container -->
-        
       </div>
     </div>
   </div>
@@ -235,16 +141,9 @@ proyectos sociales</div>
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
-        <div class="seccion__titulo">Ayuda a la <strong>formación</strong></div>
-        <div class="seccion__subtitulo">
-          Apostamos por los agentes del cambio social. Formamos a las organizaciones y emprendedores que apuestan por ayudar a los demás
-        </div>
+        
+        {% include secciones/ayuda-formacion.liquid %}
 
-        <div class="seccion__cuerpo margin">
-          <p>Con el fin de ampliar los recursos y las herramientas digitales, e, incluso, motivar ideas innovadoras para aplicar en proyectos sociales, la FIDI pone a disposición de las ONG y emprendedores sociales una serie de becas formativas. Las Becas FIDI ofrecen a todos aquellos agentes que intervienen en proyectos sociales, la posibilidad de realizar cualquier programa que se imparte en el <a href="http://www.isdi.es/" target="_blank">ISDI</a>. </p>
-
-          <p>Nuestro interés es dotar a estos agentes del conocimiento digital necesario para multiplicar los efectos sociales de sus proyectos.</p>
-        </div>
       </div>
 
         <div class="personajes personajes--five">
@@ -279,14 +178,9 @@ proyectos sociales</div>
   <div class="container">
     <div class="row">
       <div class="col-md-10 col-md-offset-1">
-        <div class="media">
-          <div class="media-left">
-            <img class="media-object img-circle" src="imgs/unicef_logo.jpg">
-          </div>
-          <div class="media-body text-left">
-            Somos aliados de Unicef en temas de formación digital y estamos colaborando con la transformación digital de la ONG. Ya hemos formado al Comité Directivo y sus Managers, y actualmente 16 trabajadores están realizando cursos de Internet Academi.
-          </div>
-        </div>
+
+        {% include secciones/unicef.liquid %}
+        
       </div>
     </div>
   </div>
@@ -323,68 +217,4 @@ proyectos sociales</div>
   </div>
 </div>
 
-
-
-<div class="modal fade theme--verde-oscuro seccion--oscura" id="participarModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="ajax-loading js-frm-loading" style="display:none">
-        <img class="ajax-loading__icon" src="imgs/ajax-loader.svg"/>
-      </div>
-      <div class="modal-header js-modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">
-          Participa en el proyecto
-          "<span class="js-nombre-proyecto"></span>
-        </h4>
-      </div>
-      <div class="modal-body">
-
-        <form id="participacionForm">
-
-          <div class="alert alert-danger js-formulario-error" style="display: none">
-            No se ha podido enviar el correo electrónico, disculpa las molestias.
-            Vuelva a intentarlo nuevamente yi no consigue enviar el correo, 
-            ponte en contacto con nosotros por teléfono en el: <strong>900 814 144</strong>
-          </div>
- 
-          <input type="hidden" id="proyecto" class="js-hidden-proyecto" />
-
-          <div class="form-group">
-            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
-          </div>
-
-          <div class="form-group">
-            <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Apellidos" required>
-          </div>
-
-          <div class="form-group">
-            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
-          </div>
-
-          <div class="form-group">
-            <select class="form-control" id="edicionMib" name="edicionMib" required>
-              <option value="">- Edición del MIB -</option>
-              <option value="1">1ª edición</option>
-              <option value="2">2ª edición</option>
-              <option value="3">3ª edición</option>
-              <option value="4">4ª edición</option>
-              <option value="5">5ª edición</option>
-            </select>
-          </div>
-
-          <a class="btn btn-cuadrado btn-cuadrado--secondary" id="apuntarse-proyecto">Apuntarme</a>
-
-        </form>
-      </div>
-
-      <div class="js-formulario-ok text-center" style="display: none">
-        <p>
-          Hemos recibido correctamente tu petición :) <br/>
-          En breve nos pondremos en contacto contigo.
-        </p>
-        <a class="btn btn-cuadrado btn-cuadrado--secondary" data-dismiss="modal">Cerrar</a>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+{% include modal-inscripcion.liquid %}
