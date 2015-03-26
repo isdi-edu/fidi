@@ -267,7 +267,7 @@ html.desktop .personajes--six , html.desktop .personajes--five {
       position: absolute;
       left: 0;
       right: 0;
-      top: 38%;
+      top: 25%;
 
       padding-left: $spacing-sm;
       padding-right: $spacing-sm;
@@ -283,6 +283,11 @@ html.desktop .personajes--six , html.desktop .personajes--five {
       margin-left: auto;
       margin-right: auto;
       margin-top: 20px;
+
+      width: 42px;
+      height: 42px;
+      line-height: 42px;
+      font-size: 19px;
     }
   }  
 }

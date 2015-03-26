@@ -126,7 +126,7 @@ proyectos sociales</div>
           </p>
           <ul class="inline-list">
             <li>
-              <a href="#proyectos-ayuda-en-accion" data-proyecto-social>
+              <a href="#proyectos-ayuda-en-accion" data-proyecto-social data-default>
                 <img src="imgs/proyectos/ayuda-en-accion_logo.png" alt="" class="img-circle proyecto-logo">
               </a>
             </li>
@@ -249,56 +249,20 @@ proyectos sociales</div>
 
         <div class="personajes personajes--five">
           <ul class="personajes__wrapper">
+
+            {% for personaje in site.data.ayuda-formacion %}
             <li class="personajes__item">
-              <img class="personajes__foto" src="imgs/voluntarios/david-ruiz.jpg" />
+              <img class="personajes__foto" src="imgs/personajes/ayuda-formacion/{{ personaje.foto }}" />
               <div class="personajes__datos">
                 <div class="personajes__datos-inner">
-                  <span class="personajes__nombre">David Ruíz Montes</span>
-                  <span class="personajes__cargo">Consultor</span> 
-                  <a href="#" class="personajes__icono socicon">j</a>
+                  <span class="personajes__nombre">{{ personaje.nombre }}</span>
+                  <span class="personajes__cargo">{{ personaje.cargo }}</span> 
+                  <a href="{{ personaje.linkedin }}" class="personajes__icono socicon">j</a>
                 </div>
               </div>
             </li>
-            <li class="personajes__item">
-              <img class="personajes__foto" src="imgs/voluntarios/david-ruiz.jpg" />
-              <div class="personajes__datos">
-                <div class="personajes__datos-inner">
-                  <span class="personajes__nombre">David Ruíz Montes</span>
-                  <span class="personajes__cargo">Consultor</span> 
-                  <a href="#" class="personajes__icono socicon">j</a>
-                </div>
-              </div>
-            </li>
-            <li class="personajes__item">
-              <img class="personajes__foto" src="imgs/voluntarios/david-ruiz.jpg" />
-              <div class="personajes__datos">
-                <div class="personajes__datos-inner">
-                  <span class="personajes__nombre">David Ruíz Montes</span>
-                  <span class="personajes__cargo">Consultor</span> 
-                  <a href="#" class="personajes__icono socicon">j</a>
-                </div>
-              </div>
-            </li>
-            <li class="personajes__item">
-              <img class="personajes__foto" src="imgs/voluntarios/david-ruiz.jpg" />
-              <div class="personajes__datos">
-                <div class="personajes__datos-inner">
-                  <span class="personajes__nombre">David Ruíz Montes</span>
-                  <span class="personajes__cargo">Consultor</span> 
-                  <a href="#" class="personajes__icono socicon">j</a>
-                </div>
-              </div>
-            </li>
-            <li class="personajes__item">
-              <img class="personajes__foto" src="imgs/voluntarios/david-ruiz.jpg" />
-              <div class="personajes__datos">
-                <div class="personajes__datos-inner">
-                  <span class="personajes__nombre">David Ruíz Montes</span>
-                  <span class="personajes__cargo">Consultor</span> 
-                  <a href="#" class="personajes__icono socicon">j</a>
-                </div>
-              </div>
-            </li>
+            {% endfor %}
+
           </ul>
         </div>
 
@@ -339,66 +303,20 @@ proyectos sociales</div>
 
     <div class="personajes personajes--six">
       <ul class="personajes__wrapper">
-        <li class="personajes__item">
-          <img class="personajes__foto" src="imgs/voluntarios/david-ruiz.jpg" />
+
+        {% for personaje in site.data.patronato %}
+        <li class="personajes__item {% if personaje.esDirectora %}personajes__item--directora{% endif %}">
+          <img class="personajes__foto" src="imgs/personajes/patronato/{{ personaje.foto }}" />
           <div class="personajes__datos">
             <div class="personajes__datos-inner">
-              <span class="personajes__nombre">David Ruíz Montes</span>
-              <span class="personajes__cargo">Consultor</span> 
-              <a href="#" class="personajes__icono socicon">j</a>
+              <span class="personajes__nombre">{{ personaje.nombre }}</span>
+              <span class="personajes__cargo">{{ personaje.cargo }}</span> 
+              <a href="{{ personaje.linkedin }}" class="personajes__icono socicon">j</a>
             </div>
           </div>
         </li>
-        <li class="personajes__item">
-          <img class="personajes__foto" src="imgs/voluntarios/david-ruiz.jpg" />
-          <div class="personajes__datos">
-            <div class="personajes__datos-inner">
-              <span class="personajes__nombre">David Ruíz Montes</span>
-              <span class="personajes__cargo">Consultor</span> 
-              <a href="#" class="personajes__icono socicon">j</a>
-            </div>
-          </div>
-        </li>
-        <li class="personajes__item">
-          <img class="personajes__foto" src="imgs/voluntarios/david-ruiz.jpg" />
-          <div class="personajes__datos">
-            <div class="personajes__datos-inner">
-              <span class="personajes__nombre">David Ruíz Montes</span>
-              <span class="personajes__cargo">Consultor</span> 
-              <a href="#" class="personajes__icono socicon">j</a>
-            </div>
-          </div>
-        </li>
-        <li class="personajes__item">
-          <img class="personajes__foto" src="imgs/voluntarios/david-ruiz.jpg" />
-          <div class="personajes__datos">
-            <div class="personajes__datos-inner">
-              <span class="personajes__nombre">David Ruíz Montes</span>
-              <span class="personajes__cargo">Consultor</span> 
-              <a href="#" class="personajes__icono socicon">j</a>
-            </div>
-          </div>
-        </li>
-        <li class="personajes__item">
-          <img class="personajes__foto" src="imgs/voluntarios/david-ruiz.jpg" />
-          <div class="personajes__datos">
-            <div class="personajes__datos-inner">
-              <span class="personajes__nombre">David Ruíz Montes</span>
-              <span class="personajes__cargo">Consultor</span> 
-              <a href="#" class="personajes__icono socicon">j</a>
-            </div>
-          </div>
-        </li>
-        <li class="personajes__item">
-          <img class="personajes__foto" src="imgs/voluntarios/david-ruiz.jpg" />
-          <div class="personajes__datos">
-            <div class="personajes__datos-inner">
-              <span class="personajes__nombre">David Ruíz Montes</span>
-              <span class="personajes__cargo">Consultor</span> 
-              <a href="#" class="personajes__icono socicon">j</a>
-            </div>
-          </div>
-        </li>
+        {% endfor %}
+        
       </ul>
     </div>
 

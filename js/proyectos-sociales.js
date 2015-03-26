@@ -56,4 +56,6 @@ $(function() {
     $seccionProyectos.hide();
   });
 
+  $("[data-proyecto-social][data-default]").trigger("click");
+
 });
