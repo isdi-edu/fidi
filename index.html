@@ -70,114 +70,21 @@ proyectos sociales</div>
 
 <div class="personajes personajes--full-width">
   <ul class="personajes__wrapper">
+
+    {% for personaje in site.data.voluntarios %}
+
     <li class="personajes__item">
-      <img class="personajes__foto" src="imgs/voluntarios/david-ruiz.jpg" />
+      <img class="personajes__foto" src="imgs/personajes/voluntarios/{{ personaje.foto }}" />
       <div class="personajes__datos">
-        <span class="personajes__nombre">David Ruíz Montes</span>
-        <span class="personajes__cargo">Consultor</span> 
-        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
+        <span class="personajes__nombre">{{ personaje.nombre }}</span>
+        <span class="personajes__cargo">{{ personaje.cargo }}</span> 
+        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">{{ personaje.coins }} FIDI coins</span> 
         <a href="#" class="personajes__icono socicon">j</a>
       </div>
     </li>
-    <li class="personajes__item">
-      <img class="personajes__foto" src="imgs/voluntarios/david-ruiz.jpg" />
-      <div class="personajes__datos">
-        <span class="personajes__nombre">David Ruíz Montes</span>
-        <span class="personajes__cargo">Consultor</span> 
-        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
-        <a href="#" class="personajes__icono socicon">j</a>
-      </div>
-    </li>
-    <li class="personajes__item">
-      <img class="personajes__foto" src="imgs/voluntarios/david-ruiz.jpg" />
-      <div class="personajes__datos">
-        <span class="personajes__nombre">David Ruíz Montes</span>
-        <span class="personajes__cargo">Consultor</span> 
-        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
-        <a href="#" class="personajes__icono socicon">j</a>
-      </div>
-    </li>
-    <li class="personajes__item">
-      <img class="personajes__foto" src="imgs/voluntarios/david-ruiz.jpg" />
-      <div class="personajes__datos">
-        <span class="personajes__nombre">David Ruíz Montes</span>
-        <span class="personajes__cargo">Consultor</span> 
-        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
-        <a href="#" class="personajes__icono socicon">j</a>
-      </div>
-    </li>
-    <li class="personajes__item">
-      <img class="personajes__foto" src="imgs/voluntarios/david-ruiz.jpg" />
-      <div class="personajes__datos">
-        <span class="personajes__nombre">David Ruíz Montes</span>
-        <span class="personajes__cargo">Consultor</span> 
-        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
-        <a href="#" class="personajes__icono socicon">j</a>
-      </div>
-    </li>
-    <li class="personajes__item">
-      <img class="personajes__foto" src="imgs/voluntarios/david-ruiz.jpg" />
-      <div class="personajes__datos">
-        <span class="personajes__nombre">David Ruíz Montes</span>
-        <span class="personajes__cargo">Consultor</span> 
-        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
-        <a href="#" class="personajes__icono socicon">j</a>
-      </div>
-    </li>
-    <li class="personajes__item">
-      <img class="personajes__foto" src="imgs/voluntarios/david-ruiz.jpg" />
-      <div class="personajes__datos">
-        <span class="personajes__nombre">David Ruíz Montes</span>
-        <span class="personajes__cargo">Consultor</span> 
-        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
-        <a href="#" class="personajes__icono socicon">j</a>
-      </div>
-    </li>
-    <li class="personajes__item">
-      <img class="personajes__foto" src="imgs/voluntarios/david-ruiz.jpg" />
-      <div class="personajes__datos">
-        <span class="personajes__nombre">David Ruíz Montes</span>
-        <span class="personajes__cargo">Consultor</span> 
-        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
-        <a href="#" class="personajes__icono socicon">j</a>
-      </div>
-    </li>
-    <li class="personajes__item">
-      <img class="personajes__foto" src="imgs/voluntarios/david-ruiz.jpg" />
-      <div class="personajes__datos">
-        <span class="personajes__nombre">David Ruíz Montes</span>
-        <span class="personajes__cargo">Consultor</span> 
-        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
-        <a href="#" class="personajes__icono socicon">j</a>
-      </div>
-    </li>
-    <li class="personajes__item">
-      <img class="personajes__foto" src="imgs/voluntarios/david-ruiz.jpg" />
-      <div class="personajes__datos">
-        <span class="personajes__nombre">David Ruíz Montes</span>
-        <span class="personajes__cargo">Consultor</span> 
-        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
-        <a href="#" class="personajes__icono socicon">j</a>
-      </div>
-    </li>
-    <li class="personajes__item">
-      <img class="personajes__foto" src="imgs/voluntarios/david-ruiz.jpg" />
-      <div class="personajes__datos">
-        <span class="personajes__nombre">David Ruíz Montes</span>
-        <span class="personajes__cargo">Consultor</span> 
-        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
-        <a href="#" class="personajes__icono socicon">j</a>
-      </div>
-    </li>
-    <li class="personajes__item">
-      <img class="personajes__foto" src="imgs/voluntarios/david-ruiz.jpg" />
-      <div class="personajes__datos">
-        <span class="personajes__nombre">David Ruíz Montes</span>
-        <span class="personajes__cargo">Consultor</span> 
-        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">6 Fidi coins</span> 
-        <a href="#" class="personajes__icono socicon">j</a>
-      </div>
-    </li>
+
+    {% endfor %}
+
   </ul>
 </div>
 

@@ -72,6 +72,7 @@ $(function() {
       "message": {
         "from_email":"biko.isdi@gmail.com",
         "to":[{"email":"biko.isdi@gmail.com"}],
+        //"to":[{"email":"informacion@fidi.isdi.es"}],
         "subject": "Landing ISDI, petición de participación en proyecto",
         "text": body
       }
