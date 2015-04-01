@@ -3,6 +3,7 @@ Y luego guarda este documento pulsando en el icono del disco situado a la derech
 
 
 
+![cabecera.jpg](/imgs/personas/cabecera.jpg)
 
 
 
