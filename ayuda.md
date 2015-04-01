@@ -11,23 +11,14 @@ Cada vez que modifiques y guardes uno de los ficheros desde prose.io tardará un
 
 Cada cambio en un fichero require que añadas un comentario con el que quedará registrado el cambio. Puedes usar el que pone por defecto o personalizarlo.
 
-# Cómo cambiar los voluntarios
-Los datos de todos los voluntarios se encuentra en: `/_data/voluntarios.yml`
-Las fotos se encuentran en: `/imgs/personas/`
+# Cómo cambiar las personas de voluntarios, formación y patronato
+Los datos de las personas se encuentra en:
+* `/data/voluntarios.yml`
+* `/data/ayuda-formacion.yml`
+* `/data/patronato.yml`
 
-En `voluntarios.yml` encontrarás un listado con todos los datos de cada voluntario, se pueden añadir, modificar y borrar libremente.
-
-# Cómo cambiar a las personas de Ayuda a la formación
-Los datos de todos los voluntarios se encuentra en: `/_data/ayuda-formacion.yml`
-Las fotos se encuentran en: `/imgs/personas/`
-
-En `ayuda-formacion.yml` encontrarás un listado con todos los datos de cada persona, se pueden añadir, modificar y borrar libremente.
-
-# Cómo cambiar a las personas del patronato
-Los datos de todos los voluntarios se encuentra en: `/_data/patronato.yml`
-Las fotos se encuentran en: `/imgs/personas/`
-
-En `patronato.yml` encontrarás un listado con todos los datos de cada persona, se pueden añadir, modificar y borrar libremente.
+Las fotos están en: `/imgs/personas/`
+Pulsa en el fichero `/imgs/personas/a-subir-imagen.md` para encontrar las instrucciones de cómo subir una nueva foto.
 
 # Cómo cambiar los proyectos
 Los datos de los proyectos de ayuda en acción y ashoka se encuentra en:
