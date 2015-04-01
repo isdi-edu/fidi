@@ -1,6 +1,6 @@
-Cómo subir una imagen:
+Como subir una imagen:
 
-1. Por el foco del cursor en la frase en mayúsculas más abajo
+1. Por el foco del cursor en la frase en mayusculas mas abajo
 2. Arrastra aqui mismo el fichero de imagen a subir.
 3. Guarda este documento pulsando en el icono del disco situado a la derecha.
 
