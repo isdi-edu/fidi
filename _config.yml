@@ -8,5 +8,26 @@ exclude:
   - "package.json"
   - "readme.md"
 
+prose:
+  ignore:
+    - .bowerrc
+    - .gitignore
+    - .ruby-gemset
+    - .ruby-version
+    - Gemfile
+    - Gemfile.lock
+    - _config.yml
+    - bower.json
+    - gulpfile.js
+    - hologram_config.yml
+    - readme.md
+    - package.json
+    - /_doc_assets
+    - /_sass
+    - /css
+    - /fonts
+    - /js
+    - /vendor
+
 #sass:
 #    style: :compressed
