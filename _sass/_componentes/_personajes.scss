@@ -8,7 +8,7 @@ category: Componentes
 ## Ancho completo del navegador
 
 ```html_example
-<div class="personajes personajes--full-width">
+<div class="personajes personajes--simples">
   <ul class="personajes__wrapper">
     <li class="personajes__item">
       <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
@@ -40,7 +40,7 @@ Podemos marcar a un personaje como directora aplicándole el estilo `personajes_
 
 ```html_example
 <div class="container">
-  <div class="personajes personajes--five">
+  <div class="personajes personajes--five personajes--importantes">
     <ul class="personajes__wrapper">
       <li class="personajes__item personajes__item--directora">
         <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
@@ -65,7 +65,7 @@ Podemos marcar a un personaje como directora aplicándole el estilo `personajes_
 
 ```html_example
 <div class="container">
-  <div class="personajes personajes--six">
+  <div class="personajes personajes--six personajes--importantes">
     <ul class="personajes__wrapper">
       <li class="personajes__item">
         <img class="personajes__foto" src="../imgs/voluntarios/david-ruiz.jpg" />
@@ -93,11 +93,7 @@ $personajes-breackpoint2: 650px;
 
 $personaje-datos-bg: rgba(0,0,0,0.8);
 
-.personajes--full-width {
-  @media(max-width: ($personajes-breackpoint1 - 1)) {
-    padding: $spacing-lg 0;
-  }
-
+.personajes--simples {
   background-color: black;
 }
 
@@ -106,20 +102,36 @@ $personaje-datos-bg: rgba(0,0,0,0.8);
   list-style: none;
   max-width: 1400px;
   margin: 0 auto;
+
+  .personajes--simples & {
+    @media(max-width: ($personajes-breackpoint1 - 1)) {
+      padding-top: $spacing-sm; 
+      padding-bottom: $spacing-sm; 
+    }
+  }
 }
 
 .personajes__item {
   position: relative;
-  width: 220px;
 
-  @media(max-width: ($personajes-breackpoint1 - 1)) { margin:0 auto $spacing; }
   @media(min-width: $personajes-breackpoint1) { 
     float: left; 
     width: 50%;
   }
   @media(min-width: $personajes-breackpoint2) { width: 33.3333%; }
 
-  .personajes--full-width & {
+  .personajes--importantes & {
+    @media(max-width: ($personajes-breackpoint1 - 1)) { 
+      width: 220px;
+      margin:0 auto $spacing; 
+    }
+  }
+
+  .personajes--simples & {
+    @media(max-width: ($personajes-breackpoint1 - 1)) {
+      width: 240px;
+      margin:0 auto $spacing-xs; 
+    }
     @media(min-width: 950px) { width: 25%; }
     @media(min-width: 1250px) { width: 16.6666%; }
   }
@@ -152,6 +164,12 @@ $personaje-datos-bg: rgba(0,0,0,0.8);
 
     .personajes__foto {
       width: 100%;
+
+      .personajes--simples & {
+        @media(max-width: ($personajes-breackpoint1 - 1)) {
+          display: none;
+        }
+      }
     }
 
 
@@ -180,7 +198,6 @@ $personaje-datos-bg: rgba(0,0,0,0.8);
 \* *********************************************** */
 
 .personajes__datos {
-  position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
@@ -189,7 +206,22 @@ $personaje-datos-bg: rgba(0,0,0,0.8);
   color: white;
   background-color: $personaje-datos-bg;
   line-height: 1.1;
+
+  .personajes--importantes & {
+    position: absolute;
+  }
+
+  .personajes--simples & {
+    @media(max-width: $personajes-breackpoint1 - 1) {
+      padding-left: 50px;
+      padding-right: 7px;
+    }
+    @media(min-width: $personajes-breackpoint1) {
+      position: absolute;
+    }
+  }
 }
+ 
 
 .personajes__nombre {
   display: block;
@@ -201,10 +233,12 @@ $personaje-datos-bg: rgba(0,0,0,0.8);
   @include font-size-small();
   line-height: 1.1;
 
-  &:after {
-    content:"/";
-    margin-right: 3px;
-    margin-left: 5px;
+  .personajes--simples & {
+    &:after {
+      content:"/";
+      margin-right: 3px;
+      margin-left: 5px;
+    }
   }
 }
 
@@ -238,6 +272,13 @@ $personaje-datos-bg: rgba(0,0,0,0.8);
   text-decoration: none;
   text-align: center;
   @include transition(background-color 0.3s);
+
+  .personajes--simples & {
+    @media(max-width: $personajes-breackpoint1 - 1) {
+      right: auto;
+      left: 10px;
+    }
+  }
 
   &:hover {
     color: white!important;
