@@ -1,0 +1,218 @@
+{% assign i18n = site.data[page.lang].textos %}
+
+<div class="container">
+  <ul class="top-navbar inline-list">
+    <li><a href="#fundacion" class="top-navbar__item theme--azul js-scroll" data-duration="500">{{ i18n.menu.fundacion }}</a></li>
+    <li><a href="#voluntarios" class="top-navbar__item theme--azul-oscuro js-scroll" data-duration="750">{{ i18n.menu.voluntarios }}</a></li>
+    <li><a href="#compromiso" class="top-navbar__item theme--verde js-scroll" data-duration="1000">{{ i18n.menu.compromiso }}</a></li>
+    <li><a href="#impulso" class="top-navbar__item theme--azul-claro js-scroll" data-duration="1250">{{ i18n.menu.proyectos-sociales }}</a></li>
+    <li><a href="#ayuda" class="top-navbar__item theme--rojo js-scroll" data-duration="1500">{{ i18n.menu.ayuda }}</a></li>
+    <li><a href="#patronato" class="top-navbar__item theme--morado js-scroll" data-duration="1750">{{ i18n.menu.patronato }}</a></li>
+  </ul>
+</div>
+
+<div class="redes-sociales">
+  <div class="container">
+    <span class="redes-sociales__titulo">{{ i18n.compartir }}</span>
+
+    <ul class="redes-sociales__iconos">
+      <li><a href="https://www.facebook.com/sharer/sharer.php?u={{ 'http://fidi.isdi.es' |  url_encode }}" class="redes-sociales__icono socicon js-social-share" target="_blank" title="Compartir en  Facebook">b</a></li>
+
+      <li><a href="https://twitter.com/intent/tweet?text=Fundaci%C3%B3n%20internacional%20para%20el%20Desarrollo%20de%20Internet&url={{ 'http://fidi.isdi.es' |  url_encode }}" class="redes-sociales__icono socicon js-social-share" target="_blank" title="Compartir en  Twitter">a</a></li>
+
+      <li><a href="https://plus.google.com/share?url={{ 'http://fidi.isdi.es' |  url_encode }}" class="redes-sociales__icono socicon js-social-share" target="_blank" title="Compartir en Google plus">c</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+<a name="fundacion"></a>
+<div class="seccion seccion--oscura theme--azul" style="background-image: url('/imgs/fundacion_bk.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        {% include {{ page.lang }}/la-fundacion.liquid %}
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<a name="voluntarios"></a>
+<div class="seccion seccion--oscura theme--azul-oscuro" style="background-image: url('/imgs/voluntarios_bk.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        
+          {% include {{ page.lang }}/voluntarios.liquid %}
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="personajes personajes--simples">
+  <ul class="personajes__wrapper">
+
+    {% for personaje in site.data[page.lang].voluntarios %}
+
+    <li class="personajes__item">
+      <img class="personajes__foto" src="/imgs/personas/{{ personaje.foto }}" />
+      <div class="personajes__datos">
+        <span class="personajes__nombre">{{ personaje.nombre }}</span>
+        <span class="personajes__cargo">{{ personaje.cargo }}</span> 
+        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">{{ personaje.coins }} FIDI coins</span> 
+        <a href="{{ personaje.linkedin }}" target="_blank" class="personajes__icono socicon">j</a>
+      </div>
+    </li>
+
+    {% endfor %}
+
+  </ul>
+</div>
+
+
+
+
+<a name="compromiso"></a>
+<div class="seccion seccion--oscura theme--verde" style="background-image: url('/imgs/compromiso_bk.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+
+        {% include {{ page.lang }}/compromiso.liquid %}
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<a name="impulso"></a>
+<div class="seccion seccion--oscura theme--azul-claro js-seccion" style="background-image: url('/imgs/proyectos_bk.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+
+        {% include {{ page.lang }}/proyectos-sociales.liquid %}
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="seccion seccion--oscura seccion--pequena theme--verde-oscuro seccion--proyectos js-seccion-proyectos" style="display:none">
+  <div class="seccion__triangulo-top js-proyectos-triangulo"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <button type="button" class="close seccion__cerrar js-proyectos-cerrar" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <div>
+          <div id="proyectos-ayuda-en-accion" style="display:none">
+            {% assign proyectos = site.data[page.lang].proyectos-ayuda-en-accion %}
+            {% include proyectos.liquid proyectos = proyectos %}
+          </div>
+
+          <div id="proyectos-ashoka" style="display:none">
+            {% assign proyectos = site.data[page.lang].proyectos-ashoka %}
+            {% include proyectos.liquid proyectos = proyectos %}
+          </div> <!-- proyectos-pane -->
+
+        </div> <!-- proyectos-container -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<a name="ayuda"></a>
+<div class="seccion seccion--oscura theme--rojo" style="background-image: url('/imgs/formacion_bk.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        
+        {% include {{ page.lang }}/ayuda-formacion.liquid %}
+
+      </div>
+    </div>
+
+    <div class="personajes personajes--five personajes--importantes">
+      <ul class="personajes__wrapper">
+
+        {% for personaje in site.data[page.lang].ayuda-formacion %}
+        <li class="personajes__item">
+          <img class="personajes__foto" src="/imgs/personas/{{ personaje.foto }}" />
+          <div class="personajes__datos">
+            <div class="personajes__datos-inner">
+              <span class="personajes__nombre">{{ personaje.nombre }}</span>
+              <span class="personajes__cargo">{{ personaje.cargo }}</span> 
+              <a href="{{ personaje.linkedin }}" target="_blank" class="personajes__icono socicon">j</a>
+            </div>
+          </div>
+        </li>
+        {% endfor %}
+
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+<div class="seccion seccion--pequena seccion--oscura theme--rojo">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+
+        {% include {{ page.lang }}/unicef.liquid %}
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<a name="patronato"></a>
+<div class="seccion seccion--oscura theme--morado" style="background-image: url('/imgs/patronato_bk.jpg')">
+  <div class="container">
+    <div class="seccion__titulo">
+      <strong>{{ i18n.seccion_patronato_titulo }}</strong>
+    </div>
+
+    <div class="personajes personajes--six personajes--importantes">
+      <ul class="personajes__wrapper">
+
+        {% for personaje in site.data[page.lang].patronato %}
+        <li class="personajes__item {% if personaje.esDirectora %}personajes__item--directora{% endif %}">
+          <img class="personajes__foto" src="/imgs/personas/{{ personaje.foto }}" />
+          <div class="personajes__datos">
+            <div class="personajes__datos-inner">
+              <span class="personajes__nombre">{{ personaje.nombre }}</span>
+              <span class="personajes__cargo">{{ personaje.cargo }}</span> 
+              <a href="{{ personaje.linkedin }}" target="_blank" class="personajes__icono socicon">j</a>
+            </div>
+          </div>
+        </li>
+        {% endfor %}
+        
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+{% include modal-inscripcion.liquid %}

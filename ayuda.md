@@ -1,5 +1,8 @@
+# Cómo cambiar textos generales
+Modifica los ficheros de idioma que encontrarás en: `/_data/<idioma>/textos.yml`
+
 # Cómo cambiar el texto de cada sección de la página
-El html de cada sección de la página se encuentra en: `/_includes/secciones/`
+El html de cada sección de la página se encuentra en: `/_includes/<idioma>/`
 Tienen un nombre descriptivo respecto al nombre de la sección.
 
 **IMPORTANTE**: No tocar el código de `/index.html` para añadir algo a las secciones, este fichero contiene el código necesario para dar estructura.
@@ -13,16 +16,16 @@ Cada cambio en un fichero require que añadas un comentario con el que quedará 
 
 # Cómo cambiar las personas de voluntarios, formación y patronato
 Los datos de las personas se encuentra en:
-* `/data/voluntarios.yml`
-* `/data/ayuda-formacion.yml`
-* `/data/patronato.yml`
+* `/_data/<idioma>/voluntarios.yml`
+* `/_data/<idioma>/ayuda-formacion.yml`
+* `/_data/<idioma>/patronato.yml`
 
 Las fotos están en: `/imgs/personas/`
 Pulsa en el fichero `/imgs/personas/a-subir-imagen.md` para encontrar las instrucciones de cómo subir una nueva foto.
 
 # Cómo cambiar los proyectos
 Los datos de los proyectos de ayuda en acción y ashoka se encuentra en:
-* `/_data/proyectos-ayuda-en-accion.yml`
-* `/_data/proyectos-ashoka.yml`
+* `/_data/<idioma>/proyectos-ayuda-en-accion.yml`
+* `/_data/<idioma>/proyectos-ashoka.yml`
 
 Contienen todos los campos de un proyecto y se puede añadir, modificar y borrar libremente. **Mínimo debe existir un proyecto en cada fichero**.

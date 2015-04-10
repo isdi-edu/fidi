@@ -2,13 +2,13 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="ajax-loading js-frm-loading" style="display:none">
-        <img class="ajax-loading__icon" src="imgs/ajax-loader.svg"/>
+        <img class="ajax-loading__icon" src="/imgs/ajax-loader.svg"/>
       </div>
       <div class="modal-header js-modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title">
-          Participa en el proyecto
-          "<span class="js-nombre-proyecto"></span>
+          {{ i18n.inscripcion.comienzo_titulo }}
+          "<span class="js-nombre-proyecto"></span>"
         </h4>
       </div>
       <div class="modal-body">
@@ -16,12 +16,11 @@
         <form id="participacionForm">
 
           <div class="alert alert-danger js-formulario-error" style="display: none">
-            No se ha podido enviar el correo electrónico, disculpa las molestias.
-            Vuelva a intentarlo nuevamente yi no consigue enviar el correo, 
-            ponte en contacto con nosotros por teléfono en el: <strong>900 814 144</strong>
+            {{ i18n.inscripcion.mensaje_error }}
           </div>
  
           <input type="hidden" id="proyecto" class="js-hidden-proyecto" />
+          <input type="hidden" id="idioma" value="{{ page.lang }}" class="js-hidden-idioma" />
 
           <div class="form-group">
             <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" required>
@@ -37,26 +36,25 @@
 
           <div class="form-group">
             <select class="form-control" id="edicionMib" name="edicionMib" required>
-              <option value="">- Edición del MIB -</option>
-              <option value="1">1ª edición</option>
-              <option value="2">2ª edición</option>
-              <option value="3">3ª edición</option>
-              <option value="4">4ª edición</option>
-              <option value="5">5ª edición</option>
+              <option value="">{{ i18n.inscripcion.combo_edicion_mib }}</option>
+              <option value="1">{{ i18n.inscripcion.edicion1 }}</option>
+              <option value="2">{{ i18n.inscripcion.edicion2 }}</option>
+              <option value="3">{{ i18n.inscripcion.edicion3 }}</option>
+              <option value="4">{{ i18n.inscripcion.edicion4 }}</option>
+              <option value="5">{{ i18n.inscripcion.edicion5 }}</option>
             </select>
           </div>
 
-          <a class="btn btn-cuadrado btn-cuadrado--secondary" id="apuntarse-proyecto">Apuntarme</a>
+          <a class="btn btn-cuadrado btn-cuadrado--secondary" id="apuntarse-proyecto">{{ i18n.inscripcion.boton-apuntarme }}</a>
 
         </form>
       </div>
 
       <div class="js-formulario-ok text-center" style="display: none">
         <p>
-          Hemos recibido correctamente tu petición :) <br/>
-          En breve nos pondremos en contacto contigo.
+          {{ i18n.inscripcion.mensaje_ok }}
         </p>
-        <a class="btn btn-cuadrado btn-cuadrado--secondary" data-dismiss="modal">Cerrar</a>
+        <a class="btn btn-cuadrado btn-cuadrado--secondary" data-dismiss="modal">{{ i18n.inscripcion.boton-cerrar }}</a>
       </div>
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->

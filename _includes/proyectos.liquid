@@ -1,5 +1,5 @@
 {% if include.proyectos.size > 1 %}
-<div class="small margin-xs">PROYECTOS</div>
+<div class="small margin-xs">{{ i18n.seccion_proyectos.titulo }}</div>
 {% endif %}
 
 <div role="tabpanel">
@@ -32,11 +32,11 @@
       </div>
       <div class="seccion__cuerpo text-left">
         <div class="proyecto__contenido">
-          <div class="h3">Necesidad</div>
+          <div class="h3">{{ i18n.seccion_proyectos.necesidad }}</div>
           <p>
             {{ proyecto.necesidad }}
           </p>
-          <div class="h3">Equipo</div>
+          <div class="h3">{{ i18n.seccion_proyectos.equipo }}</div>
           <p>
             {{ proyecto.equipo }}
           </p>
@@ -49,13 +49,13 @@
             {{ proyecto.horas }}
           </span>
           <span class="proyecto__fidi-horas">
-            horas
+            {{ i18n.seccion_proyectos.horas }}
           </span>
         </div>
 
         <div class="text-center">
           <a href="#" class="btn btn-cuadrado btn-cuadrado--secondary is-active" data-toggle="modal" data-target="#participarModal" data-proyecto="{{ proyecto.nombre}}">
-            Quiero participar
+            {{ i18n.seccion_proyectos.boton-participar }}
           </a>
         </div>
       </div>
