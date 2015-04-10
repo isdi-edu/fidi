@@ -1,0 +1,51 @@
+title: 'Fundación internacional para el Desarrollo de Internet - FIDI'
+cabecera_isdi_titulo: Instituto Superior para el Desarrollo de Internet
+pagina_titulo: 
+  'Fundación internacional para el <br/>
+  <span class="cabecera__titulo-destacado">
+  desarrollo de <strong>internet</strong>'
+
+menu:
+  fundacion: La fundación
+  voluntarios: Voluntarios digitales
+  compromiso: Compromiso con el cambio educativo
+  proyectos-sociales: Impulso a proyectos sociales
+  ayuda: Ayuda a la formación
+  patronato: Patronato
+
+compartir: Compartir en
+
+seccion_patronato:
+  titulo: Patronato
+
+seccion_proyectos:
+  titulo: PROYECTOS
+  necesidad: Necesidad
+  equipo: Equipo
+  horas: horas
+  boton-participar: Quiero participar
+
+inscripcion:
+  comienzo_titulo: Participa en el proyecto
+  combo_edicion_mib: '- Edición del MIB -'
+  edicion1: 1ª edición
+  edicion2: 2ª edición
+  edicion3: 3ª edición
+  edicion4: 4ª edición
+  edicion5: 5ª edición
+  boton-apuntarme: Apuntarme
+  boton-cerrar: Cerrar
+  mensaje_ok:
+    'Hemos recibido correctamente tu petición :) <br/>
+    En breve nos pondremos en contacto contigo.'
+  mensaje_error:
+    'No se ha podido enviar el correo electrónico, disculpa las molestias.
+    Vuelva a intentarlo nuevamente yi no consigue enviar el correo, 
+    ponte en contacto con nosotros por teléfono en el: <strong>900 814 144</strong>'
+
+pie:
+  aviso-legal: Aviso legal
+  politica-privacidad: Política de privacidad
+  cookies: Cookies
+  contacto: Contacto
+  contacto_url: http://www.isdi.es/contacto
