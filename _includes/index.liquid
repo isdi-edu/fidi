@@ -65,7 +65,7 @@
       <div class="personajes__datos">
         <span class="personajes__nombre">{{ personaje.nombre }}</span>
         <span class="personajes__cargo">{{ personaje.cargo }}</span> 
-        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="1 fidicon = 1 hora digital">{{ personaje.coins }} FIDI coins</span> 
+        <span class="personajes__coins" data-toggle="tooltip" data-placement="bottom" title="{{ i18n.relacion-fidi-hora }}">{{ personaje.coins }} FIDI coins</span> 
         <a href="{{ personaje.linkedin }}" target="_blank" class="personajes__icono socicon">j</a>
       </div>
     </li>
