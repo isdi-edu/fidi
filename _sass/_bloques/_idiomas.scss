@@ -1,0 +1,40 @@
+.idiomas {
+  margin-left: 10px;
+  vertical-align: inherit;
+}
+
+    .idiomas__items {
+      font-size: inherit;
+      border-radius: 0;
+      padding: 0;
+      background-color: #000;
+      min-width: 110px;
+    }
+
+    .idiomas__item {
+      
+      @media(max-width: $screen-xs-max) {
+        padding-top: 12px!important;
+        padding-bottom: 12px!important;
+      }
+
+      &, &:hover, &:focus, &:active { 
+        color: white;
+        text-decoration: none; 
+      }
+    }
+
+        .idiomas__item--spanish,
+        .idiomas__item--english {
+          padding-left: 20px;
+          background-position: left center;
+          background-repeat: no-repeat;
+
+          .idiomas__items--dropdown & {
+            padding-left: 25px;
+            background-position: 5px center;
+          }
+        }
+
+        .idiomas__item--spanish { background-image: url('../imgs/banderas/es.gif'); }
+        .idiomas__item--english { background-image: url('../imgs/banderas/gb.gif'); }

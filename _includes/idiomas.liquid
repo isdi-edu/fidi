@@ -1,0 +1,21 @@
+<div class="btn-group idiomas">
+
+  {% if page.lang == "es" %}
+    <a class="dropdown-toggle idiomas__item idiomas__item--spanish" data-toggle="dropdown" href="/">
+      ESPAÑOL <span class="caret"></span>
+    </a>
+  {% else %}
+    <a class="dropdown-toggle idiomas__item idiomas__item--english" data-toggle="dropdown" href="/es/">
+      ENGLISH <span class="caret"></span>
+    </a>
+  {% endif %}
+
+  <ul class="dropdown-menu dropdown-menu-right idiomas__items idiomas__items--dropdown">
+    <li class="first {% if page.lang == 'en' %}active{% endif %}">
+      <a href="/en" class="idiomas__item idiomas__item--english" xml:lang="en">ENGLISH</a>
+    </li>
+    <li class="last {% if page.lang == 'es' %}active{% endif %}">
+      <a href="/" class="idiomas__item idiomas__item--spanish" xml:lang="es">ESPAÑOL</a>
+    </li>
+  </ul>
+</div>
