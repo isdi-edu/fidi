@@ -22,3 +22,12 @@
 .isdi-logo {
   text-decoration: none;
 }
+
+.unicef-logo {
+  display: none;
+  width: 90px;
+
+  @media(min-width: $screen-xs-min) {
+    display: block;
+  }
+}

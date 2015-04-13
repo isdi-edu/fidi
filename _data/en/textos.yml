@@ -35,6 +35,9 @@ inscripcion:
   edicion5: 5th edition
   boton-apuntarme: Register
   boton-cerrar: Close
+  nombre: Name
+  apellidos: Surname
+  email: Email
   mensaje_ok:
     'We have successfully received your request :) <br/>
     As soon as we will contact you'
