@@ -16,6 +16,5 @@
 ### Commands
 
 * To debug the prototype or view the prototype on the browser: **gulp**
-* To compile to "dist" folder: **gulp dist**
-* To deploy to development: **gulp deploy:dev**
-* To deploy to production: **gulp deploy:prod**
+* To compile to "_site" folder: **gulp build**
+* To deploy to production: **git push origin master**

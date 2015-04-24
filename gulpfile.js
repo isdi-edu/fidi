@@ -197,6 +197,8 @@ if (argv.debug) {
 
 // Compila todo el código
 gulp.task('build', function(done) {
+  // Si queremos que Hologram documente nuestro CSS, descomentar la siguiente línea:
+  // runSequence('clean', 'bower', ['jekyll', 'hologram'], done);
   runSequence('clean', 'bower', ['jekyll'], done);
 });
 
