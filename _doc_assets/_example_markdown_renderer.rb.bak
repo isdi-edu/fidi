@@ -1,3 +1,4 @@
+require 'Pygments'
 
 class ExampleMarkdownRenderer < Redcarpet::Render::HTML
   def block_code(code, language)
@@ -46,4 +47,3 @@ class ExampleMarkdownRenderer < Redcarpet::Render::HTML
     end
   end
 end
-

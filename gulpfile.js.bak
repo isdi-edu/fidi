@@ -197,7 +197,7 @@ if (argv.debug) {
 
 // Compila todo el código
 gulp.task('build', function(done) {
-  runSequence('clean', 'bower', ['jekyll'], done);
+  runSequence('clean', 'bower', ['jekyll', 'hologram'], done);
 });
 
 // Tarea para trabajar en el prototipo
