@@ -17,4 +17,4 @@
 
 * To debug the prototype or view the prototype on the browser: **gulp**
 * To compile to "_site" folder: **gulp build**
-* To deploy to production: **git push origin master**
+* To deploy to production: **git push**
