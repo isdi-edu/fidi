@@ -20,10 +20,14 @@
 }
 
 .seccion__partnerstitulo { 
-  font-size:30px;
+  font-size:20px;
   text-align:center;
   margin: 20px 0 -20px 0;
   text-transform: uppercase;
+
+  @media(min-width: $screen-sm-min) {
+    font-size:30px;
+  }
 }
 
 .seccion__tiralogos {
