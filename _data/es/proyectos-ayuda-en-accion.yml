@@ -1,22 +1,33 @@
 - nombre: 
-    Diseño y análisis funcional para el desarrollo de 
-    una plataforma web de mediación digital de las comunicaciones 
-    entre padrinos y apadrinados
+    CONSTRUCCIÓN DE UNA PLATAFORMA ON-LINE PARA LA DINAMIZACIÓN DEL VÍNCULO SOLIDARIO ENTRE ESPAÑA Y AMÉRICA LATINA
+  localizacion:
+    Madrid
   necesidad:
-    Incrementar el intercambio en las comunicaciones entre los
-    socios de Ayuda en Acción en España y los niños apadrinados
-    en América Latina
-  equipo:
-    Ayuda en Acción, proveedor digital, proveedor CRM y otros socios
-    tecnológicos de AeA
+   'Los niños y niñas apadrinados por los socios de Ayuda en Acción buscan el contacto continuo con sus padrinos. A su vez, los padrinos quieren conocer la realidad de sus comunidades...<br /> 
+    <br />
+    Es por ello, que el objetivo de Ayuda en Acción es, mediante el apadrinamiento, establecer un vínculo solidario con la comunidad en la que vive el niño permitiendo conocer sus respectivas realidades.<br />
+    <br />
+    Afortunadamente, en el mundo digital podemos tener una solución para avanzar en la construcción efectiva y bidireccional de este vínculo solidario, Ayuda en Acción requiere la construcción de una plataforma que ofrezca a los/las socios/as españoles/as un procedimiento fácil e intuitivo para compartir con los niños/as y las comunidades fotografías, mensajes, vídeos, imágenes, noticias, etc.<br />
+    <br />
+    ¿Nos ayudas a diseñar y realizar un análisis funcional para hacer este proyecto realidad?<br />
+    <br />
+    Con 40 horas de tu ayuda esperamos así incrementar el intercambio entre los socios y las personas en las comunidades.' 
   horas: 40
 
 - nombre:
-    Identificar posibles aplicaciones de la geolocalización en
-    los procesos y proyectos de Ayuda en Acción. Diseño y
-    análisis funcional de una de ellas
+    PROPUESTA PARA EL USO DE LA GEOLOCALIZACIÓN COMO INSTRUMENTO DE GESTIÓN Y TRANSPARENCIA EN LOS PROCESOS Y PROYECTOS DE AYUDA EN ACCIÓN BASES PARA EL VOLUNTARIADO DIGITAL
+  localizacion:
+    Madrid
   necesidad:
-    Utilizar la geolocalización como instrumento para la mejora
-    de los procesos y proyectos de la organización y su transparencia
-  equipo: Ayuda en Acción
+    'En un mundo global, la pobreza se ha globalizado. No existen sólo países pobres, sino que también existen pobres en todos los países.<br /> 
+    <br />
+    Con frecuencia Ayuda en Acción combate la pobreza rural en comunidades aisladas.<br />
+    <br />
+    Para ellos es un reto hacer visibles estas comunidades, dónde están y cuál es su realidad. Pero además, compartir información sobre lo que hacen y dónde lo hacen es su mejor herramienta para sumar esfuerzos y mejorar su labor.<br />
+    <br />
+    Ayuda en Acción requiere 40 horas de dedicación para elaborar una propuesta de alternativas de uso de la geolocalización para la mejora de sus procesos y proyectos, así como de transparencia en la información que comparte con terceros.<br />
+    <br />
+    ¿Te apetece dar el primer paso en el diseño y análisis funcional de la propuesta?
+    <br />
+    Facilitarás el acceso a comunidades que sin ti, Ayuda en Acción no podría trabajar.'
   horas: 40

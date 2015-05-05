@@ -23,7 +23,7 @@ seccion_patronato:
 seccion_proyectos:
   titulo: PROJECTS
   necesidad: Need
-  equipo: Team
+  localizacion: Location
   horas: hours
   boton-participar: I want to participate
 

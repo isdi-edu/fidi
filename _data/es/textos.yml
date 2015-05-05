@@ -23,7 +23,7 @@ seccion_patronato:
 seccion_proyectos:
   titulo: PROYECTOS
   necesidad: Necesidad
-  equipo: Equipo
+  localizacion: Localización
   horas: horas
   boton-participar: Quiero participar
 
