@@ -6,7 +6,8 @@ Como subir una imagen:
 
 
 * PON EL FOCO DEL CURSOR POR DEBAJO DE ESTA FRASE *
-_ 
+_ ![MIBer.png](/imgs/personas/MIBer.png)
+
 
 
 
