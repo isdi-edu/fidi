@@ -23,13 +23,13 @@
   linkedin: http://es.linkedin.com/in/manuelmorenogarcia
   
 - nombre: Inés Echevarría
-  cargo: Consultor
-  coins: 15
+  cargo: Consultora
+  coins: 5
   foto: ines-echeverria.jpg
   linkedin: http://es.linkedin.com/in/inesechevarria
   
 - nombre: Alejandra Sánchez
-  cargo: Consultor
+  cargo: Consultora
   coins: 13
   foto: alejandra-sanchez.jpg
   linkedin: http://es.linkedin.com/in/asbuendia 
@@ -59,7 +59,7 @@
   linkedin: http://es.linkedin.com/in/nachodepinedo
 
 - nombre: María Trénor
-  cargo: Consultor
+  cargo: Consultora
   coins: 6
   foto: maria-trenor.jpg
   linkedin: http://es.linkedin.com/in/mariatrenor
@@ -139,7 +139,7 @@
 - nombre: Juan Luis Cerón
   cargo: Consultor
   coins: 2
-  foto: juan-luis-ceron.jpg
+  foto: 
   linkedin: https://es.linkedin.com/in/juanluisceronbancaprivada
 
 - nombre: Rita González
