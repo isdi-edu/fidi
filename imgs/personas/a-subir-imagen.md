@@ -6,7 +6,9 @@ Como subir una imagen:
 
 
 * PON EL FOCO DEL CURSOR POR DEBAJO DE ESTA FRASE *
-_ ![MIBer.png](/imgs/personas/MIBer.png)
+_ ![Manuel-Guijarro.jpg](/imgs/personas/Manuel-Guijarro.jpg)
+![Patricia-Guijarro.jpg](/imgs/personas/Patricia-Guijarro.jpg)
+
 
 
 
