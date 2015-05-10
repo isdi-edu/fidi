@@ -22,12 +22,6 @@
   foto: manuel-moreno.jpg
   linkedin: http://es.linkedin.com/in/manuelmorenogarcia
   
-- nombre: Inés Echevarría
-  cargo: Consultora
-  coins: 15
-  foto: ines-echeverria.jpg
-  linkedin: http://es.linkedin.com/in/inesechevarria
-  
 - nombre: Alejandra Sánchez
   cargo: Consultora
   coins: 13
@@ -75,6 +69,12 @@
   coins: 6
   foto: maria-garcia.jpg
   linkedin: http://es.linkedin.com/in/mariagarciamayo
+  
+- nombre: Inés Echevarría
+  cargo: Consultora
+  coins: 5
+  foto: ines-echeverria.jpg
+  linkedin: http://es.linkedin.com/in/inesechevarria
 
 - nombre: Olatz Arteche
   cargo: Consultora
