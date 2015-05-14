@@ -6,11 +6,5 @@ Como subir una imagen:
 
 
 * PON EL FOCO DEL CURSOR POR DEBAJO DE ESTA FRASE *
-![Patricia-Moreira2.jpg](/imgs/personas/Patricia-Moreira2.jpg)
-![Manuel-Guijarro2.jpg](/imgs/personas/Manuel-Guijarro2.jpg)
-
-
-
-
-
-
+![manuel_guijarro_480x480.jpg]({{site.baseurl}}/imgs/personas/manuel_guijarro_480x480.jpg)
+![patricia_moreira_480x480.jpg]({{site.baseurl}}/imgs/personas/patricia_moreira_480x480.jpg)
