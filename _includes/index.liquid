@@ -134,6 +134,11 @@
             {% include proyectos.liquid proyectos = proyectos %}
           </div> <!-- proyectos-pane -->
 
+          <div id="proyectos-hazloposible" style="display:none">
+            {% assign proyectos = site.data[page.lang].proyectos-hazloposible %}
+            {% include proyectos.liquid proyectos = proyectos %}
+          </div> <!-- proyectos-pane -->
+
         </div> <!-- proyectos-container -->
       </div>
     </div>
