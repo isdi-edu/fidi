@@ -1,3 +1,4 @@
+![GemaQuintas.jpg]({{site.baseurl}}/imgs/personas/GemaQuintas.jpg)
 Como subir una imagen:
 
 1. Por el foco del cursor en la frase en mayusculas mas abajo
@@ -6,4 +7,3 @@ Como subir una imagen:
 
 
 * PON EL FOCO DEL CURSOR POR DEBAJO DE ESTA FRASE *
-
