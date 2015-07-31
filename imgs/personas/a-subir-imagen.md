@@ -1,4 +1,4 @@
-![GemaQuintas.jpg]({{site.baseurl}}/imgs/personas/GemaQuintas.jpg)
+![SebastianMuller.jpg]({{site.baseurl}}/imgs/personas/SebastianMuller.jpg)
 Como subir una imagen:
 
 1. Por el foco del cursor en la frase en mayusculas mas abajo
