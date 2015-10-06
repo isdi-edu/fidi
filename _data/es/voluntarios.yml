@@ -1,3 +1,15 @@
+- nombre: Borja Garzón
+  cargo: Consultor
+  coins: 24
+  foto: borja-garzon.jpg
+  linkedin: http://es.linkedin.com/in/borjagarzon
+  
+- nombre: Rodrigo Miranda
+  cargo: Profesor
+  coins: 22
+  foto: rodrigo-miranda.jpg
+  linkedin: http://www.linkedin.com/in/rodrigomiranda
+
 - nombre: David Ruiz
   cargo: Consultor
   coins: 20
@@ -9,6 +21,12 @@
   coins: 18
   foto: arantxa-perez.jpg
   linkedin: http://es.linkedin.com/in/arantxapramiro
+  
+- nombre: Nacho de Pinedo
+  cargo: Prof./Cons.
+  coins: 17
+  foto: nacho-depinedo.jpg
+  linkedin: http://es.linkedin.com/in/nachodepinedo
 
 - nombre: Tomás Trenor
   cargo: Consultor
@@ -22,35 +40,23 @@
   foto: manuel-moreno.jpg
   linkedin: http://es.linkedin.com/in/manuelmorenogarcia
   
-- nombre: Borja Garzón
-  cargo: Consultor
-  coins: 15
-  foto: borja-garzon.jpg
-  linkedin: http://es.linkedin.com/in/borjagarzon
-  
 - nombre: Alejandra Sánchez
   cargo: Consultora
   coins: 13
   foto: alejandra-sanchez.jpg
   linkedin: http://es.linkedin.com/in/asbuendia
-  
-- nombre: Rodrigo Miranda
-  cargo: Profesor
-  coins: 12
-  foto: rodrigo-miranda.jpg
-  linkedin: http://www.linkedin.com/in/rodrigomiranda
 
 - nombre: Coque Pons
   cargo: Consultora
   coins: 8
   foto: coque-pons.jpg
   linkedin: http://es.linkedin.com/in/cponsherrera
-
-- nombre: Nacho de Pinedo
-  cargo: Prof./Cons.
+  
+- nombre: Gema Quintas
+  cargo: Consultora
   coins: 7
-  foto: nacho-depinedo.jpg
-  linkedin: http://es.linkedin.com/in/nachodepinedo
+  foto: GemaQuintas.jpg
+  linkedin: https://es.linkedin.com/pub/gema-quintas/47/216/609
 
 - nombre: María Trénor
   cargo: Consultora
@@ -94,11 +100,11 @@
   foto: alexandra-feiler.jpg
   linkedin: http://es.linkedin.com/in/alexandrafeiler
   
-- nombre: Gema Quintas
-  cargo: Consultora
-  coins: 2
-  foto: GemaQuintas.jpg
-  linkedin: https://es.linkedin.com/pub/gema-quintas/47/216/609
+- nombre: Miguel Barreras
+  cargo: Consultor
+  coins: 4
+  foto: 01723f6.jpg
+  linkedin: https://es.linkedin.com/in/miguelbarreras
 
 - nombre: Daniel Gálvez
   cargo: Consultor
