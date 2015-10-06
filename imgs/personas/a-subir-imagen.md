@@ -7,3 +7,4 @@ Como subir una imagen:
 
 
 * PON EL FOCO DEL CURSOR POR DEBAJO DE ESTA FRASE *
+![01723f6.jpg]({{site.baseurl}}/imgs/personas/01723f6.jpg)
