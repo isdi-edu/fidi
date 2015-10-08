@@ -82,6 +82,12 @@
   foto: maria-garcia.jpg
   linkedin: http://es.linkedin.com/in/mariagarciamayo
   
+- nombre: Miguel Barreras
+  cargo: Consultor
+  coins: 5
+  foto: 01723f6.jpg
+  linkedin: https://es.linkedin.com/in/miguelbarreras
+  
 - nombre: Inés Echevarría
   cargo: Consultora
   coins: 5
@@ -99,12 +105,6 @@
   coins: 3
   foto: alexandra-feiler.jpg
   linkedin: http://es.linkedin.com/in/alexandrafeiler
-  
-- nombre: Miguel Barreras
-  cargo: Consultor
-  coins: 4
-  foto: 01723f6.jpg
-  linkedin: https://es.linkedin.com/in/miguelbarreras
 
 - nombre: Daniel Gálvez
   cargo: Consultor
