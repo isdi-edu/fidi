@@ -6,3 +6,4 @@ Como subir una imagen:
 
 
 * PON EL FOCO DEL CURSOR POR DEBAJO DE ESTA FRASE *
+![miguelbarreras.jpg]({{site.baseurl}}/imgs/personas/miguelbarreras.jpg)
