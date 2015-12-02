@@ -1,3 +1,5 @@
+
+![OriolSalom.jpeg]({{site.baseurl}}/imgs/personas/OriolSalom.jpeg)
 Como subir una imagen:
 
 1. Por el foco del cursor en la frase en mayusculas mas abajo
