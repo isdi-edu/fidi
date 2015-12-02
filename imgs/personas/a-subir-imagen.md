@@ -6,7 +6,8 @@ Como subir una imagen:
 
 
 * PON EL FOCO DEL CURSOR POR DEBAJO DE ESTA FRASE *
-![Dani-Twal.jpg]({{site.baseurl}}/imgs/personas/Dani-Twal.jpg)
+![EncarniAmador.jpg]({{site.baseurl}}/imgs/personas/EncarniAmador.jpg)
+
 
 
 
