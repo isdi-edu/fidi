@@ -1,6 +1,3 @@
-![Bea Osorio.jpg]({{site.baseurl}}/imgs/personas/Bea Osorio.jpg)
-![MiguelBarreras.JPG]({{site.baseurl}}/imgs/personas/MiguelBarreras.JPG)
-![SebastianMuller.jpg]({{site.baseurl}}/imgs/personas/SebastianMuller.jpg)
 Como subir una imagen:
 
 1. Por el foco del cursor en la frase en mayusculas mas abajo
@@ -9,6 +6,3 @@ Como subir una imagen:
 
 
 * PON EL FOCO DEL CURSOR POR DEBAJO DE ESTA FRASE *
-![01723f6.jpg]({{site.baseurl}}/imgs/personas/01723f6.jpg)
-![carlos-molina.jpg]({{site.baseurl}}/imgs/personas/carlos-molina.jpg)
-![miguelbarreras.JPG]({{site.baseurl}}/imgs/personas/miguelbarreras.JPG)
