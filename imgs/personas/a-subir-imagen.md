@@ -6,5 +6,6 @@ Como subir una imagen:
 
 
 * PON EL FOCO DEL CURSOR POR DEBAJO DE ESTA FRASE *
-![Bea Osorio.jpg]({{site.baseurl}}/imgs/personas/Bea Osorio.jpg)
+![carlos-molina.jpg]({{site.baseurl}}/imgs/personas/carlos-molina.jpg)
+
 
