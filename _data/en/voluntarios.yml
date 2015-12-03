@@ -1,155 +1,269 @@
+- nombre: Borja Garzón
+  cargo: Consultor
+  coins: 24
+  foto: borja-garzon.jpg
+  linkedin: http://es.linkedin.com/in/borjagarzon
+  
+- nombre: Rodrigo Miranda
+  cargo: Profesor
+  coins: 22
+  foto: rodrigo-miranda.jpg
+  linkedin: http://www.linkedin.com/in/rodrigomiranda
+
 - nombre: David Ruiz
-  cargo: Consultant
+  cargo: Consultor
   coins: 20
   foto: david-ruiz.jpg
   linkedin: http://es.linkedin.com/in/davidruizmontes
 
 - nombre: Arantxa Pérez
-  cargo: Consultant
+  cargo: Consultora
   coins: 18
   foto: arantxa-perez.jpg
   linkedin: http://es.linkedin.com/in/arantxapramiro
-
-- nombre: Tomás Trenor
-  cargo: Consultant
+  
+- nombre: Nacho de Pinedo
+  cargo: Prof./Cons.
+  coins: 17
+  foto: nacho-depinedo.jpg
+  linkedin: http://es.linkedin.com/in/nachodepinedo
+  
+- nombre: Anisa Almendro
+  cargo: Consultora
   coins: 16
+  foto: Anisa.jpg
+  linkedin: https://es.linkedin.com/in/anisalmendro
+  
+- nombre: Daniel Twal
+  cargo: Consultor
+  coins: 16
+  foto: Dani-Twal.jpg
+  linkedin: https://es.linkedin.com/in/danieltwal/es
+  
+- nombre: Carlos Molina
+  cargo: Consultor
+  coins: 16
+  foto: carlos-molina.jpg
+  linkedin: https://es.linkedin.com/in/cmolina/es
+  
+- nombre: Encarni Amador
+  cargo: Consultora
+  coins: 16
+  foto: EncarniAmador.jpg
+  linkedin: https://es.linkedin.com/in/encarniamador
+  
+- nombre: Víctor Sierra
+  cargo: Consultor
+  coins: 16
+  foto: victorsierra.jpg
+  linkedin: https://es.linkedin.com/in/victorsierrareyes 
+  
+- nombre: Susana Muriel
+  cargo: Consultora
+  coins: 16
+  foto: susanamuriel.jpg
+  linkedin: https://es.linkedin.com/in/susanamuriel
+ 
+- nombre: Oriol Aguadé
+  cargo: Consultor
+  coins: 16
+  foto: oriolaguade.jpg
+  linkedin: https://es.linkedin.com/in/oriolaguade
+
+- nombre: Javier Rodriguez
+  cargo: Consultor
+  coins: 16
+  foto: javierr.jpg
+  linkedin: https://es.linkedin.com/in/jrodriguezr/es
+  
+- nombre: Francisca Del Río
+  cargo: Consultora
+  coins: 16
+  foto: franciscadelrio.jpg
+  linkedin: https://es.linkedin.com/in/mfranciscadelrio
+  
+- nombre: Tomás Trenor
+  cargo: Consultor
+  coins: 15
   foto: tomas-trenor.jpg
   linkedin: http://es.linkedin.com/in/tomastrenor
 
 - nombre: Manuel Moreno
-  cargo: Consultant
-  coins: 16
+  cargo: Consultor
+  coins: 14
   foto: manuel-moreno.jpg
   linkedin: http://es.linkedin.com/in/manuelmorenogarcia
   
 - nombre: Alejandra Sánchez
-  cargo: Consultant
+  cargo: Consultora
   coins: 13
   foto: alejandra-sanchez.jpg
-  linkedin: http://es.linkedin.com/in/asbuendia 
-
-- nombre: Rodrigo Miranda
-  cargo: Lecturer
-  coins: 9
-  foto: rodrigo-miranda.jpg
-  linkedin: http://www.linkedin.com/in/rodrigomiranda
+  linkedin: http://es.linkedin.com/in/asbuendia
   
-- nombre: Borja Garzón
-  cargo: Consultant
-  coins: 9
-  foto: borja-garzon.jpg
-  linkedin: http://es.linkedin.com/in/borjagarzon
+- nombre: Jorge Belenguer
+  cargo: Consultor
+  coins: 11
+  foto: JorgeBelenguer.jpg
+  linkedin: https://es.linkedin.com/in/jorgebelenguer
+  
+- nombre: Enric Huesca
+  cargo: Consultor
+  coins: 11
+  foto: enrichuesca.jpeg
+  linkedin: https://es.linkedin.com/in/enrichuesca
+  
+- nombre: Beatriz Osorio
+  cargo: Consultora
+  coins: 11
+  foto: BeaOsorio.jpg
+  linkedin: https://es.linkedin.com/in/beatrizosorio
+ 
+- nombre: María José Navarro
+  cargo: Consultora
+  coins: 11
+  foto: MariaJNavarro.jpg
+  linkedin: https://es.linkedin.com/in/mariajosenavarro1
+  
+- nombre: Oriol Salom
+  cargo: Consultor
+  coins: 11
+  foto: OriolSalom.jpeg
+  linkedin: https://es.linkedin.com/in/oriolsalom
+
+- nombre: Francisca del Río
+  cargo: Consultora
+  coins: 11
+  foto: franciscadelrio.jpg
+  linkedin: https://es.linkedin.com/in/mfranciscadelrio
 
 - nombre: Coque Pons
-  cargo: Consultant
+  cargo: Consultora
   coins: 8
   foto: coque-pons.jpg
   linkedin: http://es.linkedin.com/in/cponsherrera
-
-- nombre: Nacho de Pinedo
-  cargo: Lect./Cons.
-  coins: 7
-  foto: nacho-depinedo.jpg
-  linkedin: http://es.linkedin.com/in/nachodepinedo
   
+- nombre: Gema Quintas
+  cargo: Consultora
+  coins: 7
+  foto: GemaQuintas.jpg
+  linkedin: https://es.linkedin.com/pub/gema-quintas/47/216/609
+
 - nombre: María Trénor
-  cargo: Consultant
+  cargo: Consultora
   coins: 6
   foto: maria-trenor.jpg
   linkedin: http://es.linkedin.com/in/mariatrenor
-
+  
+- nombre: Sebastián Muller
+  cargo: Consultor
+  coins: 6
+  foto: SebastianMuller.jpg
+  linkedin: https://es.linkedin.com/in/sebastianmuller/es
+  
 - nombre: Luis Ferrándiz
-  cargo: Lecturer
+  cargo: Profesor
   coins: 6
   foto: luis-ferrandiz.jpg
   linkedin: http://www.linkedin.com/in/luisferrandiz
 
 - nombre: María García
-  cargo: Lecturer
+  cargo: Consultora
   coins: 6
   foto: maria-garcia.jpg
   linkedin: http://es.linkedin.com/in/mariagarciamayo
   
+- nombre: Miguel Barreras
+  cargo: Consultor
+  coins: 5
+  foto: miguelbarreras.jpg
+  linkedin: https://es.linkedin.com/in/miguelbarreras
+  
 - nombre: Inés Echevarría
-  cargo: Consultant
-  coins: 15
+  cargo: Consultora
+  coins: 5
   foto: ines-echeverria.jpg
   linkedin: http://es.linkedin.com/in/inesechevarria
 
 - nombre: Olatz Arteche
-  cargo: Consultant
+  cargo: Consultora
   coins: 3
   foto: olatz-arteche.jpg
   linkedin: http://es.linkedin.com/in/olatzarte/en
 
 - nombre: Alexandra Feiler
-  cargo: Consultant
+  cargo: Consultora
   coins: 3
   foto: alexandra-feiler.jpg
   linkedin: http://es.linkedin.com/in/alexandrafeiler
 
 - nombre: Daniel Gálvez
-  cargo: Consultant
+  cargo: Consultor
   coins: 2
   foto: daniel-galvez.jpg
   linkedin: http://es.linkedin.com/in/danielgalvezh
 
 - nombre: Fernando Gonzalez
-  cargo: Lecturer
+  cargo: Profesor
   coins: 2
   foto: fernando-gonzalez.jpg
   linkedin: http://www.linkedin.com/pub/fernando-gonz%C3%A1lez-mesones/3/166/3b4
 
 - nombre: Marcelo Royán
-  cargo: Lecturer
+  cargo: Profesor
   coins: 2
   foto: marcelo-royan.jpg
   linkedin: http://www.linkedin.com/in/marceloroyan
 
 - nombre: Daniel Fernández
-  cargo: Lecturer
+  cargo: Profesor
   coins: 2
   foto: daniel-fernandez.jpg
   linkedin: http://www.linkedin.com/in/danielfa
 
 - nombre: Aquilino Peña
-  cargo: Lecturer
+  cargo: Profesor
   coins: 2
   foto: aquilino-pena.jpg
   linkedin: http://www.linkedin.com/in/aquilinopena
 
 - nombre: Gabriel Saénz
-  cargo: Lecturer
+  cargo: Profesor
   coins: 2
   foto: gabriel-saenz.jpg
   linkedin: http://www.linkedin.com/in/gabrielsaenzdeburuaga
 
 - nombre: Alberto Díaz
-  cargo: Lecturer
+  cargo: Profesor
   coins: 2
   foto: alberto-diaz.jpg
   linkedin: http://www.linkedin.com/pub/alberto-d%C3%ADaz-garc%C3%ADa/17/5a1/3a1
 
 - nombre: Berta Fraga
-  cargo: Consultant
+  cargo: Consultora
   coins: 2
   foto: berta-fraga.jpg
   linkedin: http://es.linkedin.com/pub/berta-fraga-rey/20/9bb/7a2
 
 - nombre: Juan Luis Cerón
-  cargo: Consultant
+  cargo: Consultor
   coins: 2
   foto: juan-luis-ceron.jpg
   linkedin: https://es.linkedin.com/in/juanluisceronbancaprivada
 
 - nombre: Rita González
-  cargo: Consultant
+  cargo: Consultora
   coins: 2
   foto: rita-gonzalez.jpg
   linkedin: http://es.linkedin.com/in/ritagonzalezgarcia/en
 
 - nombre: Raúl García
-  cargo: Consultant
+  cargo: Consultor
   coins: 1
   foto: raul-garcia.jpg
   linkedin: http://es.linkedin.com/in/raulgarciacarretero
+  
+- nombre: Álvaro Sainz-Pardo 
+  cargo: Consultor
+  coins: 1
+  foto: alvarosainzpardo.jpg
+  linkedin: https://es.linkedin.com/in/alvarosainzpardo/es
