@@ -1,6 +1,7 @@
 ![BeaOsorio.jpg]({{site.baseurl}}/imgs/personas/BeaOsorio.jpg)
 ![victorsierra.jpg]({{site.baseurl}}/imgs/personas/victorsierra.jpg)
 ![enrichuesca.jpeg]({{site.baseurl}}/imgs/personas/enrichuesca.jpeg)
+![alvarosainzpardo.jpg]({{site.baseurl}}/imgs/personas/alvarosainzpardo.jpg)
 
 Como subir una imagen:
 
