@@ -34,15 +34,63 @@
   foto: Anisa.jpg
   linkedin: https://es.linkedin.com/in/anisalmendro
   
-- nombre: Tomás Trenor
+- nombre: Daniel Twal
   cargo: Consultor
   coins: 16
+  foto: Dani-Twal.jpg
+  linkedin: https://es.linkedin.com/in/danieltwal/es
+  
+- nombre: Carlos Molina
+  cargo: Consultor
+  coins: 16
+  foto: carlos-molina.jpg
+  linkedin: https://es.linkedin.com/in/cmolina/es
+  
+- nombre: Encarni Amador
+  cargo: Consultora
+  coins: 16
+  foto: EncarniAmador.jpg
+  linkedin: https://es.linkedin.com/in/encarniamador
+  
+- nombre: Víctor Sierra
+  cargo: Consultor
+  coins: 16
+  foto: victorsierra.jpg
+  linkedin: https://es.linkedin.com/in/victorsierrareyes 
+  
+- nombre: Susana Muriel
+  cargo: Consultora
+  coins: 16
+  foto: susanamuriel.jpg
+  linkedin: https://es.linkedin.com/in/susanamuriel
+ 
+- nombre: Oriol Aguadé
+  cargo: Consultor
+  coins: 16
+  foto: oriolaguade.jpg
+  linkedin: https://es.linkedin.com/in/oriolaguade
+
+- nombre: Javier Rodriguez Rodriguez
+  cargo: Consultor
+  coins: 16
+  foto: javierr.jpg
+  linkedin: https://es.linkedin.com/in/jrodriguezr/es
+  
+ - nombre: Francisca Del Río
+  cargo: Consultora
+  coins: 16
+  foto: franciscadelrio.jpg
+  linkedin: https://es.linkedin.com/in/mfranciscadelrio
+  
+- nombre: Tomás Trenor
+  cargo: Consultor
+  coins: 15
   foto: tomas-trenor.jpg
   linkedin: http://es.linkedin.com/in/tomastrenor
 
 - nombre: Manuel Moreno
   cargo: Consultor
-  coins: 16
+  coins: 14
   foto: manuel-moreno.jpg
   linkedin: http://es.linkedin.com/in/manuelmorenogarcia
   
@@ -178,3 +226,8 @@
   foto: raul-garcia.jpg
   linkedin: http://es.linkedin.com/in/raulgarciacarretero
   
+- nombre: Álvaro Sainz-Pardo Gutiérrez
+  cargo: Consultor
+  coins: 1
+  foto: alvarosainzpardo.jpg
+  linkedin: https://es.linkedin.com/in/alvarosainzpardo/es
