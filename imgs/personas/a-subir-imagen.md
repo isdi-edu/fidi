@@ -1,4 +1,5 @@
 ![BeaOsorio.jpg]({{site.baseurl}}/imgs/personas/BeaOsorio.jpg)
+![victorsierra.jpg]({{site.baseurl}}/imgs/personas/victorsierra.jpg)
 
 Como subir una imagen:
 
