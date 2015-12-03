@@ -10,4 +10,5 @@ Como subir una imagen:
 * PON EL FOCO DEL CURSOR POR DEBAJO DE ESTA FRASE *
 ![franciscadelrio.jpg]({{site.baseurl}}/imgs/personas/franciscadelrio.jpg)
 ![oriolaguade.jpg]({{site.baseurl}}/imgs/personas/oriolaguade.jpg)
+![susanamuriel.jpg]({{site.baseurl}}/imgs/personas/susanamuriel.jpg)
 
