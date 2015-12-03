@@ -27,7 +27,13 @@
   coins: 17
   foto: nacho-depinedo.jpg
   linkedin: http://es.linkedin.com/in/nachodepinedo
-
+  
+- nombre: Anisa Almendro
+  cargo: Consultora
+  coins: 16
+  foto: Anisa.jpg
+  linkedin: https://es.linkedin.com/in/anisalmendro
+  
 - nombre: Tomás Trenor
   cargo: Consultor
   coins: 16
@@ -174,6 +180,6 @@
   
 - nombre: Anisa Almendro
   cargo: Consultora
-  coins: 1
+  coins: 16
   foto: Anisa.jpg
   linkedin: https://es.linkedin.com/in/anisalmendro
