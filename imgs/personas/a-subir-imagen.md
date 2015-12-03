@@ -15,4 +15,5 @@ Como subir una imagen:
 ![franciscadelrio.jpg]({{site.baseurl}}/imgs/personas/franciscadelrio.jpg)
 ![oriolaguade.jpg]({{site.baseurl}}/imgs/personas/oriolaguade.jpg)
 ![susanamuriel.jpg]({{site.baseurl}}/imgs/personas/susanamuriel.jpg)
+![JorgeBelenguer.jpg]({{site.baseurl}}/imgs/personas/JorgeBelenguer.jpg)
 
