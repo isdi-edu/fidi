@@ -99,6 +99,42 @@
   coins: 13
   foto: alejandra-sanchez.jpg
   linkedin: http://es.linkedin.com/in/asbuendia
+  
+- nombre: Jorge Belenguer
+  cargo: Consultor
+  coins: 11
+  foto: JorgeBelenguer.jpg
+  linkedin: http://es.linkedin.com/in/asbuendia
+  
+- nombre: Enric Huesca
+  cargo: Consultor
+  coins: 11
+  foto: enrichuesca.jpg
+  linkedin: http://es.linkedin.com/in/asbuendia
+  
+- nombre: Beatriz Osorio
+  cargo: Consultora
+  coins: 11
+  foto: BeaOsorio.jpg
+  linkedin: http://es.linkedin.com/in/asbuendia
+ 
+- nombre: María José Navarro
+  cargo: Consultora
+  coins: 11
+  foto: MariaJNavarro.jpg
+  linkedin: http://es.linkedin.com/in/asbuendia
+  
+- nombre: Oriol Salom
+  cargo: Consultor
+  coins: 11
+  foto: OriolSalom.jpg
+  linkedin: http://es.linkedin.com/in/asbuendia
+
+- nombre: Francisca del Río
+  cargo: Consultora
+  coins: 11
+  foto: franciscadelrio.jpg
+  linkedin: http://es.linkedin.com/in/asbuendia
 
 - nombre: Coque Pons
   cargo: Consultora
