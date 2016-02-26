@@ -29,3 +29,4 @@ Los datos de los proyectos de ayuda en acción y ashoka se encuentra en:
 * `/_data/<idioma>/proyectos-ashoka.yml`
 
 Contienen todos los campos de un proyecto y se puede añadir, modificar y borrar libremente. **Mínimo debe existir un proyecto en cada fichero**.
+
