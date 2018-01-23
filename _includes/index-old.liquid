@@ -109,8 +109,77 @@
   </div>
 </div>
 
+<div class="seccion seccion--oscura seccion--pequena theme--verde-oscuro seccion--proyectos js-seccion-proyectos" style="display:none">
+  <div class="seccion__triangulo-top js-proyectos-triangulo"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <button type="button" class="close seccion__cerrar js-proyectos-cerrar" aria-label="Cerrar">
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+        <div>
+          <div id="proyectos-ayuda-en-accion" style="display:none">
+            {% assign proyectos = site.data[page.lang].proyectos-ayuda-en-accion %}
+            {% include proyectos.liquid proyectos = proyectos %}
+          </div>
+
+          <div id="proyectos-ashoka" style="display:none">
+            {% assign proyectos = site.data[page.lang].proyectos-ashoka %}
+            {% include proyectos.liquid proyectos = proyectos %}
+          </div> <!-- proyectos-pane -->
+
+          <div id="proyectos-mi-grano-de-arena" style="display:none">
+            {% assign proyectos = site.data[page.lang].proyectos-mi-grano-de-arena %}
+            {% include proyectos.liquid proyectos = proyectos %}
+          </div> <!-- proyectos-pane -->
+
+          <div id="proyectos-hazloposible" style="display:none">
+            {% assign proyectos = site.data[page.lang].proyectos-hazloposible %}
+            {% include proyectos.liquid proyectos = proyectos %}
+          </div> <!-- proyectos-pane -->
+
+        </div> <!-- proyectos-container -->
+      </div>
+    </div>
+  </div>
+</div>
 
 
+
+
+<a name="ayuda"></a>
+<div class="seccion seccion--oscura theme--rojo" style="background-image: url('/imgs/formacion_bk.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1"> ->
+
+        {% include {{ page.lang }}/ayuda-formacion.liquid %}
+
+      </div>
+    </div>
+
+    <div class="personajes personajes--five personajes--importantes">
+      <ul class="personajes__wrapper">
+
+        {% for personaje in site.data[page.lang].ayuda-formacion %}
+        <li class="personajes__item">
+          <img class="personajes__foto" src="/imgs/personas/{{ personaje.foto }}" />
+          <div class="personajes__datos">
+            <div class="personajes__datos-inner">
+              <span class="personajes__nombre">{{ personaje.nombre }}</span>
+              <span class="personajes__cargo">{{ personaje.cargo }}</span>
+              <a href="{{ personaje.linkedin }}" target="_blank" class="personajes__icono socicon">j</a>
+            </div>
+          </div>
+        </li>
+        {% endfor %}
+
+      </ul>
+    </div>
+
+  </div>
+</div>
 
 
 
