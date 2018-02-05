@@ -233,13 +233,7 @@ $personaje-datos-bg: rgba(0,0,0,0.8);
   @include font-size-small();
   line-height: 1.1;
 
-  .personajes--simples & {
-    &:after {
-      content:"/";
-      margin-right: 3px;
-      margin-left: 5px;
-    }
-  }
+
 }
 
 .personajes__coins {
