@@ -66,6 +66,7 @@
     <li class="personajes__item">
       <img class="personajes__foto" src="/imgs/personas/{{ personaje.foto }}" />
       <div class="personajes__datos">
+      <div class="personajes__datos">
         <span class="personajes__nombre">{{ personaje.nombre }}</span>
         <span class="personajes__cargo">{{ personaje.cargo }}</span> 
         <a href="{{ personaje.linkedin }}" target="_blank" class="personajes__icono socicon">j</a>
@@ -140,7 +141,7 @@
       <ul class="personajes__wrapper">
 
         {% for personaje in site.data[page.lang].patronato %}
-        <li class="personajes__item {% if personaje.esDirectora %}personajes__item--directora{% endif %}">
+        <li class="personajes__item {% if personaje.esDirectora %}personajes__item--directora {% if page.lang=="en"%} personajes__item--directora--en{% endif %}{% endif %}">
           <img class="personajes__foto" src="/imgs/personas/{{ personaje.foto }}" />
           <div class="personajes__datos">
             <div class="personajes__datos-inner">

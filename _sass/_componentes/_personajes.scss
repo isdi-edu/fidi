@@ -191,6 +191,13 @@ $personaje-datos-bg: rgba(0,0,0,0.8);
         font-weight: bold;
       }
     }
+  .personajes__item--directora--en {
+    &:before {
+      content: 'Director';
+
+
+    }
+  }
 
 
 /* *********************************************** *\
